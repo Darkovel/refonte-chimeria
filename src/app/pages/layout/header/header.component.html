@@ -1,0 +1,23 @@
+<nav>
+    <a href="./" class="nav-icon"
+    aria-label="visit homepage"
+    aria-current="page">
+        <img src=""
+        alt="Le Pass'Heure Logo">
+    </a>
+
+    <div class="main-navlinks">
+        <button *ngIf="links" (click)="toggleNav()" 
+        class="hamburger" type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navlinks-container">
+            <a *ngFor="let link of links" [routerLink]="link.url"
+            aria-current="page">{{link.name}}</a>
+        </div>
+    </div>
+</nav>

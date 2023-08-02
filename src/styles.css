@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --passheure-yellow:#EAEB31;
+    --passheure-light-yellow:#F2EB88;
+    --passheure-orange:#BF5A36;
+    --passheure-blue:#112A37;
+
+}
+
+@font-face {
+    font-family: passheure-title-font;
+    src: url(assets/fonts/BLKCHCRY.TTF) format("truetype");
+  }
+
+body {
+    font-family:'passheure-title-font';
+}
