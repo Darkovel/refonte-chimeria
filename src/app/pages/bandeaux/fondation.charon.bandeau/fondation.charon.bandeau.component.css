@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    width: auto;
+    background-color: var(--passheure-blue);
+}
+
+.plan-container {
+ width: 50%;
+ background-color: var(--passheure-orange);
+}
+
+.description-container {
+ display: block;
+ width: 50%;
+ padding: 25px;
+ margin: 50px;
+}
+
+.title {
+    color: white;
+    font-size: 32px;
+    font-family: 'passheure-title-font';
+}
+
+.description {
+    color: white;
+    font-size: 18px;
+    font-family: 'passheure-title-font';
+}
+
+.logo-charon {
+    display: flex;
+    justify-content: right;
+}
+
+.button-charon {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
