@@ -1,10 +1,8 @@
 <nav>
-    <a href="./" class="nav-icon"
-    aria-label="visit homepage"
-    aria-current="page">
-        <img src=""
-        alt="Le Pass'Heure Logo">
-    </a>
+    <div class="nav-icon">
+        <logo-header></logo-header>
+    </div>
+    
 
     <div class="main-navlinks">
         <button *ngIf="links" (click)="toggleNav()" 
@@ -20,4 +18,8 @@
             aria-current="page">{{link.name}}</a>
         </div>
     </div>
+    <div class="nav-reservation">
+        <btn-passheure-header>Réservation</btn-passheure-header>
+    </div>
+    
 </nav>

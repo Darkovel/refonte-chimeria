@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: passheure-title-font;
-    src: url(assets/fonts/BLKCHCRY.TTF) format("truetype");
+    src: url(assets/fonts/BLKCHCRY.ttf) format("truetype");
   }
 
 body {
