@@ -1,0 +1,30 @@
+.container {
+    background-color: var(--passheure-blue);
+}
+
+.title {
+    color: white;
+    font-family: 'passheure-title-font';
+    text-align: center;
+    padding: 10px;
+}
+
+.icon {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+.description {
+    color: white;
+    font-family: 'passheure-title-font';
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.button-reservation {
+    padding: 25px;
+    margin: auto;
+}

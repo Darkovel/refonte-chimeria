@@ -1,0 +1,28 @@
+.title-container {
+    position: relative;
+    padding-top: 45px;
+    display: grid;
+    width:auto;
+    height: 100vh;
+    left:0;
+    right:0;
+    background-color: red;
+    background-image: url("/assets/img/photo-titles/Bandeau_Accueil_ss_titre.png");
+}
+
+.title {
+    text-align: center;
+    font-family: 'passheure-title-font';
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+    margin: auto;
+}
+
+.underline {
+    background-color: white;
+    height: 10px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}

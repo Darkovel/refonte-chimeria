@@ -16,6 +16,7 @@ nav {
     background-color: var(--passheure-blue);
     box-shadow: inset 0px -1px 0px black;
     z-index: 20;
+    top:0;
 }
 
 .nav-icon {

@@ -7,6 +7,7 @@ import { ReservationPage } from './pages/reservation.page/reservation.page';
 import { LayoutsModule } from './pages/layout/layout.module';
 import { TestComponent } from './pages/test/test.component';
 import { ComponentModule } from './components/component.module';
+import { BandeauModule } from './pages/bandeaux/bandeau.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ComponentModule } from './components/component.module';
     BrowserModule,
     LayoutsModule,
     ComponentModule,
+    BandeauModule,
     AppRoutingModule
   ],
   providers: [],
