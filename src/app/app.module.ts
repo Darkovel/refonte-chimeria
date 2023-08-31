@@ -1,25 +1,18 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReservationPage } from './pages/reservation.page/reservation.page';
-import { LayoutsModule } from './pages/layout/layout.module';
-import { TestComponent } from './pages/test/test.component';
-import { ComponentModule } from './components/component.module';
-import { BandeauModule } from './pages/bandeaux/bandeau.module';
+import { PageModule } from './pages/page.module';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-    LayoutsModule,
-    ComponentModule,
-    BandeauModule,
-    AppRoutingModule
+    PageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

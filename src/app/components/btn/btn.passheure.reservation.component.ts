@@ -2,19 +2,19 @@ import {Component, Input} from "@angular/core";
 import { Router } from "@angular/router";
 
 @Component({
-    selector: 'btn-passheure',
+    selector: 'btn-passheure-reservation',
     template: `
-        <button class='container' (click)="onClick()">
+        <button class='btn-reservation-container' (click)="onClick()">
             <div class='centered'>
                 <p><ng-content></ng-content></p>
             </div>
     </button>
     `,
     styles: [
-        ".container {display:flex; position: relative; border:round; width:250px ; height: 40px ;background-color: var(--passheure-orange); border-radius: 25px}",
+        ".btn-reservation-container {display:flex; position: relative; border:round; width:400px ; height: 50px ;background-color: var(--passheure-light-yellow); border-radius: 25px; margin: auto}",
         ".centered {font-family: 'passheure-tile-font'; margin:0; position: absolute; top:50%; left:50%; -ms-transform:translate(-50%, -50%);transform: translate(-50%, -50%);}",
-        "p {color:white; font-family: 'passheure-title-font'; font-size: 14px}"],
-}) export class BtnPassHeureComponent {
+        "p {font-family: 'passheure-title-font'; font-size: 20px}"],
+}) export class BtnPassHeureReservationComponent {
     @Input() link;
 
     constructor(private router:Router) {}

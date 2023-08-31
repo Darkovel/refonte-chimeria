@@ -13,7 +13,7 @@ const index = [
 ]
 
 @NgModule({
-    imports: [ComponentModule],
     declarations: index,
+    imports: [ComponentModule],
     exports: index,
 }) export class BandeauModule{}

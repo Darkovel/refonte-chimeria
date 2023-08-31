@@ -11,5 +11,7 @@ import { Component } from "@angular/core";
         {url:'./', name:'Jeux nomades'},
         {url:'./', name:'Communiqués'},
         {url:'./', name:'FAQ'}
-    ] 
+    ];
+    imageAccueil:{url:string, alt:string} = 
+        {url:"/assets/img/photo-titles/Bandeau_Accueil_ss_titre.png", alt:"accueil"};
 }
