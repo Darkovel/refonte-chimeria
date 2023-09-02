@@ -13,11 +13,12 @@ import {Component, Input} from "@angular/core";
         </div>
     `,
     styles: [
-        ".icon-escape-container {display: grid;  height: 200px; width: 200px; grid-template-columns: 200px; grid-template-rows: repeat (3, 1fr); background-color: gray; opacity: 50%; border-radius:25px; margin:25px}",
-        ".image-container {grid-row:1 / 2; margin:10px}",
-        ".description-container{position: relative; margin:10px}",
+        ".icon-escape-container {display:grid; height: 200px; width: 200px; border: 1px solid var(--passheure-gray); background-color: var(--passheure-gray); opacity: .52; border-radius:52px; margin:25px; padding:15px}",
+        ".image-container {grid-row:1 / 2; display:flex; align-content:center;}",
+        ".image-container img {max-width:100%; width:auto; max-height: 100%; height:auto; margin:auto;}",
+        ".description-container{position: relative; margin:10px;}",
         ".centered {width:100%; margin:0; position: absolute; top:50%; left:50%; -ms-transform:translate(-50%, -50%);transform: translate(-50%, -50%);}",
-        "p {font-family: 'passheure-tile-font'; font-size:14px; color:white; text-align: center;}"
+        ".description-container p {font: normal normal normal 18px/22px 'passheure-tile-font';  color:white; text-align: center;}"
     ]
 }) export class IconDescriptionEscapeComponent {
     @Input() image: {src: string, alt: string};

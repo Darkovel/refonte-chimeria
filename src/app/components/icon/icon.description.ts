@@ -7,7 +7,9 @@ import {Component, Input} from "@angular/core";
             <img src={{image.src}} alt={{image.alt}}>
         </div>
         `,
-    styles: [".icon-description-container {display: flex; height: 150px; width: 150px; border-radius: 25px; background-color: var(--passheure-orange); margin:20px}"]
+    styles: [
+        ".icon-description-container {display: flex; height: 150px; width: 150px; border-radius: 25px; background-color: var(--passheure-orange); margin:20px}",
+        ".icon-description-container img {margin: 10px;}"]
 }) export class IconDescriptionComponent {
     @Input() image: {src: string, alt: string};
 }

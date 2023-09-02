@@ -2,33 +2,39 @@
     position: relative;
     padding-top: 45px;
     display: grid;
+    overflow: hidden;
     width:auto;
     height: 100vh;
     left:0;
     right:0;
 }
 
-img {
+.title-container img {
+    display: flex;
     pointer-events: none;
     position: absolute;
-    width: 100%;
+    justify-self: center;
     height: 100%;
+    width: auto;
+    min-width: 100%;
     z-index: -1;
   }
 
 .title {
     text-align: center;
     font-family: 'passheure-title-font';
-    font-size: 25px;
-    font-weight: 100;
-    color: white;
+    font-style: var(--passheure-font-style-normal);
+    font-weight: var(--passheure-font-weight-normal);
+    font-size: var(--passheure-font-size-40);
+    line-height: var(--passheure-line-spacing-50);
+    letter-spacing: var(--passheure-character-spacing-0);
+    color: var(--passheure-white);
     margin: auto;
 }
 
 .underline {
-    background-color: white;
-    height: 10px;
-    width: 25%;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
+

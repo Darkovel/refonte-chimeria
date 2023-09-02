@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="348.889" height="50.837" viewBox="0 0 348.889 50.837">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4846" data-name="Rectangle 4846" width="348.889" height="50.837" transform="translate(0.026 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_12266" data-name="Groupe 12266" transform="translate(-0.026 0)">
+    <g id="Groupe_12261" data-name="Groupe 12261" clip-path="url(#clip-path)">
+      <path id="Tracé_1528" data-name="Tracé 1528" d="M50.645,17.667h80.639l10.4-6.015L129.688,4.721H43.8a3.627,3.627,0,1,1,0-2.085h86.42l13.523,7.815L160.04,1.025H271.858V3.109H160.586l-14.771,8.543,18.047,10.424L174.1,16.154H341.766a3.627,3.627,0,1,1,0,2.085H174.634l-8.708,5.033,21.935,12.67h14.313L221.2,24.935h72.819v2.08H221.744l-15.421,8.927H250.89a3.629,3.629,0,1,1,0,2.08H202.725L185.043,48.243H73.121a3.63,3.63,0,1,1,0-2.079H184.487l14.089-8.153H187.315L163.856,24.462l-15.535,8.979H7.1a3.63,3.63,0,1,1,0-2.079H147.791l14-8.1L143.746,12.837l-11.927,6.9H50.645Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

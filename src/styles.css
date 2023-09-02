@@ -1,10 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
+    /* Colors: */
+    --passheure-white: #FFFFFF;
+    --passheure-gray: #707070;
     --passheure-yellow:#EAEB31;
     --passheure-light-yellow:#F2EB88;
+    --passheure-light-orange: #F28F38;
     --passheure-orange:#BF5A36;
     --passheure-blue:#112A37;
 
+    /* Font/text values */
+    --passheure-font-family-blackchancery: 'passheure-title-font';
+    --passheure-font-family-perpetua: Perpetua;
+    --passheure-font-style-normal: normal;
+    --passheure-font-weight-normal: normal;
+    --passheure-font-size-20: 20px;
+    --passheure-font-size-40: 40px;
+    --passheure-character-spacing-0: 0px;
+    --passheure-line-spacing-23: 23px;
+    --passheure-line-spacing-50: 50px;
+}
+
+/* Character Styles */
+.passheure-character-style-1 {
+    font-family: var(--passheure-font-family-blackchancery);
+    font-style: var(--passheure-font-style-normal);
+    font-weight: var(--passheure-font-weight-normal);
+    font-size: var(--passheure-font-size-40);
+    line-height: var(--passheure-line-spacing-50);
+    letter-spacing: var(--passheure-character-spacing-0);
+    color: var(--passheure-white);
+}
+
+.passheure-character-style-2 {
+    font-family: var(--passheure-font-family-perpetua);
+    font-style: var(--passheure-font-style-normal);
+    font-weight: var(--passheure-font-weight-normal);
+    font-size: var(--passheure-font-size-20);
+    line-height: var(--passheure-line-spacing-23);
+    letter-spacing: var(--passheure-character-spacing-0);
+    color: var(--passheure-white);
 }
 
 @font-face {
