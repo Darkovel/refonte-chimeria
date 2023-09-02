@@ -13,7 +13,7 @@ import { Router } from "@angular/router";
     styles: [
         ".btn-header-container {display:flex; position: relative; border:round; width:150px ; height: 30px ;background-color: var(--passheure-orange); border-radius: 25px}",
         ".centered {margin:0; position: absolute; top:50%; left:50%; -ms-transform:translate(-50%, -50%);transform: translate(-50%, -50%);}",
-        "p {color:white; font-family: 'passheure-title-font'; font-size: 12px}"],
+        ".btn-header-container p {color:white; font-family: 'passheure-title-font'; font-size: 12px}"],
 }) export class BtnPassHeureHeaderComponent {
     @Input() link;
 

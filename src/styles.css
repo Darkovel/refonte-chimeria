@@ -10,7 +10,7 @@
     --passheure-blue:#112A37;
 
     /* Font/text values */
-    --passheure-font-family-blackchancery: 'passheure-title-font';
+    --passheure-font-family-blackchancery: passheure-title-font;
     --passheure-font-family-perpetua: Perpetua;
     --passheure-font-style-normal: normal;
     --passheure-font-weight-normal: normal;

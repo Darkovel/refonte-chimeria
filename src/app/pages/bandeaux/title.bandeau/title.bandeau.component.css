@@ -22,11 +22,7 @@
 
 .title {
     text-align: center;
-    font-family: 'passheure-title-font';
-    font-style: var(--passheure-font-style-normal);
-    font-weight: var(--passheure-font-weight-normal);
-    font-size: var(--passheure-font-size-40);
-    line-height: var(--passheure-line-spacing-50);
+    font: normal normal normal 50px/63px var(--passheure-font-family-blackchancery);
     letter-spacing: var(--passheure-character-spacing-0);
     color: var(--passheure-white);
     margin: auto;
