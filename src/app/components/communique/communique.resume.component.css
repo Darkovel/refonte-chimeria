@@ -1,0 +1,38 @@
+.communique-resume-container {
+    display: block;
+    background: var(--passheure-white) 0% 0% no-repeat padding-box;
+    border-radius: 55px;
+    padding: 25px;
+    margin: 25px;
+    aspect-ratio: 1 / 1.6;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+}
+
+.communique-resume-img-container {
+    height: 170px;
+    width: 170px;
+    background: var(--passheure-blue) 0% 0% no-repeat padding-box;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.communique-resume-container h2 {
+    font: normal normal normal 28px/83px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-blue);
+}
+
+.communique-resume-container p {
+    text-align: center;
+    font: normal normal normal 16px/26px Lato;
+    letter-spacing: 0px;
+    color: #213439;
+    width: 300px;
+}
+
+.btn-full-article {
+    width: fit-content;
+    margin: auto;
+}

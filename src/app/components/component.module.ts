@@ -1,4 +1,3 @@
-import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { BtnPassHeureReservationComponent } from "./btn/btn.passheure.reservation.component";
@@ -7,6 +6,8 @@ import { BtnPassHeureComponent } from "./btn/btn.passheure.component";
 import { BtnPassHeureHeaderComponent } from "./btn/btn.passheure.header";
 import { IconDescriptionEscapeComponent } from "./icon/icon.description.escape";
 import { LogoHeaderComponent } from "./logo/logo.header";
+import { BtnCommuniqueComponent } from "./btn/btn.passheure.communique.component";
+import { CommuniqueResumeComponent } from "./communique/communique.resume.component";
 
 const index = [
        BtnPassHeureReservationComponent,
@@ -15,6 +16,8 @@ const index = [
        IconDescriptionComponent,
        IconDescriptionEscapeComponent,
        LogoHeaderComponent,
+       CommuniqueResumeComponent,
+       BtnCommuniqueComponent,
 ]
 
 @NgModule({

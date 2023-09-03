@@ -1,0 +1,22 @@
+.communique-container {
+    background: var(--passheure-blue) 0% 0% no-repeat padding-box;
+    text-align: center;
+    padding: 25px;
+}
+
+.communique-title {
+    font: normal normal normal 50px/63px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+}
+
+.communique-resumes {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.btn-all-communiques {
+    width: fit-content;
+    margin: auto;
+}

@@ -7,9 +7,11 @@ import { FondationCharonBandeauComponent } from './fondation.charon.bandeau/fond
 import { PriceBandeauComponent } from './price.bandeau/price.bandeau.component';
 import { PriceColonneComponent } from './price.bandeau/components/price.colonne.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommuniqueBandeauComponent } from './communique.bandeau/communique.bandeau.component';
 
 const index = [
     TitleBandeauComponent,
+    CommuniqueBandeauComponent,
     DescriptionBandeauComponent,
     DefinitionEscapeComponent,
     FondationCharonBandeauComponent,
