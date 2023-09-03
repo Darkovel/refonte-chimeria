@@ -1,0 +1,58 @@
+.price-bandeau-container {
+    height: fit-content;
+    background: var(--passheure-gray) 0% 0% no-repeat padding-box;
+    padding: 50px;
+}
+
+.price-title {
+    padding: 12px;
+    text-align: center;
+}
+
+.price-title p {
+    font: normal normal normal 40px/50px var(--passheure-font-family-blackchancery);
+    margin: 0px;
+    padding: 0px;
+    color: var(--passheure-white);
+}
+
+.table-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.period-type {
+    display: block;
+    font: normal normal normal 20px/17px var(--passheure-font-family-perpetua);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+    text-align: center;
+}
+
+.period-img {
+    height: 175px;
+    width: 175px;
+}
+
+.period-creuse {
+    height: 175px;
+    width: 175px;
+    border: 2px dashed var(--passheure-blue);
+    border-left: none;
+}
+
+.period-pleine {
+    height: 175px;
+    width: 175px;
+    border: 2px dashed var(--passheure-blue);
+    border-left: none;
+}
+
+.table-legend {
+    font: normal normal normal 38px/43px var(--passheure-font-family-perpetua);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+    text-align: center;
+}
+
