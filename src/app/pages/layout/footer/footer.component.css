@@ -1,0 +1,59 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: var(--passheure-blue) 0% 0% padding-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.info-passheure {
+    display: block;
+    font: normal normal normal 20px/23px var(--passheure-font-family-perpetua);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--passheure-white);
+    
+}
+
+.info-passheure logo-header {
+    left: -25px;
+}
+
+.info-passheure p {
+    text-align: left;
+    margin: auto;
+    padding-left: 50px;
+    margin-left: 50px;
+}
+
+.links {
+    display: block;
+    text-align: left;
+    margin: auto;
+}
+
+.links a {
+    font: normal normal normal 20px/23px var(--passheure-font-family-perpetua);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+}
+
+.networks {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.networks h2 {
+    font: normal normal normal 27px/33px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+    text-align: center;
+}
+
+.networks-logos {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}

@@ -15,7 +15,7 @@ import { Component } from "@angular/core";
     styles : [
         ".nav-icon-logo {display: flex; width: 150px;}",
         ".nav-icon-logo img {margin-left: auto}",
-        ".text-logo-container {position:relative}",
+        ".text-logo-container {display: block; position:relative}",
         ".title-logo {color: white; font-size:12px}",
         ".descprition-logo {position:absolute; top:20px; right:0; color:white; font-size:5px}"
     ]

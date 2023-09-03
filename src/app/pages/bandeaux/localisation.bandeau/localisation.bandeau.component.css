@@ -1,0 +1,56 @@
+.localisation-bandeau-container {
+    display: block;
+    text-align: center;
+    background-image: url("/assets/img/map/background-balance.png");
+    background-size: cover;
+    padding: 50px;
+}
+
+.localisation-bandeau-container h2 {
+    font: normal normal normal 32px/40px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.localisation-container {
+    display: flex;
+}
+
+.google-map {
+    width: 50%;
+}
+
+.info-container {
+    display: block;
+    width: 50%;
+    background: var(--passheure-gray) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--passheure-gray);
+    border-radius: 52px;
+    opacity: 0.52;
+    text-align: center;
+    padding: 25px;
+    margin: 50px;
+}
+
+.info {
+    display: flex;
+    margin: auto;
+    text-align: left;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.info p {
+    font: normal normal normal 20px/23px var(--passheure-font-family-perpetua);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+    text-align: left;
+    padding-left: 25px;
+}
+
+.tram-metro-img {
+    display: block;
+    text-align: center;
+}

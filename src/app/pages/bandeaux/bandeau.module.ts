@@ -8,6 +8,7 @@ import { PriceBandeauComponent } from './price.bandeau/price.bandeau.component';
 import { PriceColonneComponent } from './price.bandeau/components/price.colonne.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommuniqueBandeauComponent } from './communique.bandeau/communique.bandeau.component';
+import { LocalisationBandeauComponent } from './localisation.bandeau/localisation.bandeau.component';
 
 const index = [
     TitleBandeauComponent,
@@ -17,6 +18,7 @@ const index = [
     FondationCharonBandeauComponent,
     PriceBandeauComponent,
     PriceColonneComponent,
+    LocalisationBandeauComponent,
 ]
 
 @NgModule({

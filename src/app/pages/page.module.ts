@@ -9,11 +9,13 @@ import { CommonModule } from "@angular/common";
 import { HeaderComponent } from "./layout/header/header.component";
 import { LayoutComponent } from "./layout/layout.component";
 import { BrowserModule } from "@angular/platform-browser";
+import { FooterComponent } from "./layout/footer/footer.component";
 
 
 @NgModule({
     declarations: [
         HeaderComponent,
+        FooterComponent,
         LayoutComponent,
         PageAccueilComponent,
         ReservationPage,

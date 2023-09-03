@@ -11,6 +11,8 @@ const routes: Routes = [
   { path: "jeux-nomades", component: PageAccueilComponent},
   { path: "communiques", component: PageAccueilComponent},
   { path: "faq", component: PageAccueilComponent},
+  { path: "legacy", component: PageAccueilComponent},
+  { path: "partenaire", component: PageAccueilComponent},
   { path: "test", component: TestComponent}
 ];
 
