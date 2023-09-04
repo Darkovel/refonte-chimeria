@@ -22,10 +22,13 @@
 
 .title {
     text-align: center;
-    font: normal normal normal 50px/63px var(--passheure-font-family-blackchancery);
-    letter-spacing: var(--passheure-character-spacing-0);
-    color: var(--passheure-white);
     margin: auto;
+}
+
+.title h2 {
+    font: normal normal normal 50px/63px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
 }
 
 .underline {

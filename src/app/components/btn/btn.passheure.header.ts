@@ -11,9 +11,29 @@ import { Router } from "@angular/router";
     </button>
     `,
     styles: [
-        ".btn-header-container {display:flex; position: relative; border:round; width:150px ; height: 30px ;background-color: var(--passheure-orange); border-radius: 25px}",
-        ".centered {margin:0; position: absolute; top:50%; left:50%; -ms-transform:translate(-50%, -50%);transform: translate(-50%, -50%);}",
-        ".btn-header-container p {color:white; font-family: 'passheure-title-font'; font-size: 12px}"],
+        `.btn-header-container {
+            display: flex; 
+            position: relative; 
+            border: round; 
+            width: 200px; 
+            height: 35px;
+            background-color: var(--passheure-orange); 
+            border-radius: 63px
+        }`,
+        `.centered {
+            margin:0; 
+            position: absolute; 
+            width: 100%;
+            top: 50%; 
+            left: 50%; 
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }`,
+        `.btn-header-container p {
+            font: normal normal normal 20px/25px var(--passheure-font-family-blackchancery);
+            letter-spacing: 0px;
+            color: var(--passheure-white);
+        }`],
 }) export class BtnPassHeureHeaderComponent {
     @Input() link;
 

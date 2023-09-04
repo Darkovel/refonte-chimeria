@@ -11,9 +11,28 @@ import { Router } from "@angular/router";
     </button>
     `,
     styles: [
-        ".btn-reservation-container {display:flex; position: relative; border:round; width:400px ; height: 50px ;background-color: var(--passheure-light-yellow); border-radius: 25px; margin: auto}",
-        ".centered {font-family: 'passheure-tile-font'; margin:0; position: absolute; top:50%; left:50%; -ms-transform:translate(-50%, -50%);transform: translate(-50%, -50%);}",
-        ".btn-reservation-container p {font-family: 'passheure-title-font'; font-size: 20px}"],
+        `.btn-reservation-container {
+            display:flex; 
+            position: relative;
+             border:round; 
+             width:465px; 
+             height: 65px;
+             background-color: 
+             var(--passheure-light-yellow); 
+             border-radius: 63px; 
+             margin: auto}`,
+        `.centered {
+            margin:0; 
+            position: absolute; 
+            width:100%;
+            top:50%; 
+            left:50%; 
+            -ms-transform:translate(-50%, -50%);
+            transform: translate(-50%, -50%);}`,
+        `.btn-reservation-container p {
+            font: normal normal normal 34px/42px var(--passheure-font-family-blackchancery);
+            letter-spacing: 0px;
+            color: var(--passheure-blue);}`],
 }) export class BtnPassHeureReservationComponent {
     @Input() link;
 
