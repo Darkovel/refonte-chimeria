@@ -9,6 +9,8 @@ import { PriceColonneComponent } from './price.bandeau/components/price.colonne.
 import { BrowserModule } from '@angular/platform-browser';
 import { CommuniqueBandeauComponent } from './communique.bandeau/communique.bandeau.component';
 import { LocalisationBandeauComponent } from './localisation.bandeau/localisation.bandeau.component';
+import { ReviewBandeauComponent } from './review.bandeau/review.bandeau.component';
+import { ReviewItemComponent } from './review.bandeau/components/review.item.component';
 
 const index = [
     TitleBandeauComponent,
@@ -19,6 +21,8 @@ const index = [
     PriceBandeauComponent,
     PriceColonneComponent,
     LocalisationBandeauComponent,
+    ReviewBandeauComponent,
+    ReviewItemComponent,
 ]
 
 @NgModule({

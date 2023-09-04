@@ -8,6 +8,7 @@ import { IconDescriptionEscapeComponent } from "./icon/icon.description.escape";
 import { LogoHeaderComponent } from "./logo/logo.header";
 import { BtnCommuniqueComponent } from "./btn/btn.passheure.communique.component";
 import { CommuniqueResumeComponent } from "./communique/communique.resume.component";
+import { InterBandeauComponent } from "./inter-bandeau/interbandeau.component";
 
 const index = [
        BtnPassHeureReservationComponent,
@@ -18,6 +19,7 @@ const index = [
        LogoHeaderComponent,
        CommuniqueResumeComponent,
        BtnCommuniqueComponent,
+       InterBandeauComponent,
 ]
 
 @NgModule({

@@ -1,0 +1,41 @@
+.review-bandeau-container {
+    display: block;
+    background: var(--passheure-orange) 0% 0% no-repeat padding-box;
+    text-align: center;
+    padding: 50px;
+    overflow-x: hidden;
+}
+
+.review-bandeau-container h2 {
+    font: normal normal normal 40px/50px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+}
+
+.review-caroussel {
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.review-items {
+    display: flex;
+    width: 225%;
+    transform: translate(-28%, 0%);
+}
+
+.selecter-container {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: transparent;
+    filter: invert(96%) sepia(96%) saturate(1348%) hue-rotate(335deg) brightness(115%) contrast(84%);
+}
+
+.previous-btn img {
+    rotate:180deg;
+}

@@ -1,4 +1,5 @@
 import {Component} from "@angular/core";
+import { PositionInterBandeau } from "src/app/components/inter-bandeau/interbandeau.component";
 
 @Component({
     selector: "page-accueil",
@@ -14,4 +15,8 @@ import {Component} from "@angular/core";
         {url:'/communiques', name:'Communiqués'},
         {url:'/faq', name:'FAQ'}
     ]
+
+    left = PositionInterBandeau.left;
+    center = PositionInterBandeau.center;
+    right = PositionInterBandeau.right;
 }

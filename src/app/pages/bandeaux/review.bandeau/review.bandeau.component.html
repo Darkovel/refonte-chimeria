@@ -1,0 +1,14 @@
+<div class="review-bandeau-container">
+    <h2>Ils en parlent</h2>
+    <div class="review-caroussel">
+        <div class="review-items">
+            <review-item [review]="reviews[0]"></review-item>
+            <review-item [review]="reviews[1]"></review-item>
+            <review-item [review]="reviews[2]"></review-item>
+        </div>
+        <div class="selecter-container">
+            <div class="previous-btn" (click)="onClickPrevious()"><img src="/assets/img/caroussel/fleche.svg" height="45px" width="45px"></div>
+            <div class="next-btn" (click)="onClickNext()"><img src="/assets/img/caroussel/fleche.svg" height="45px" width="45px"></div>
+        </div>
+    </div>
+</div>
