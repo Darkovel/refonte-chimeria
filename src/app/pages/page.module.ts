@@ -8,8 +8,11 @@ import { ComponentModule } from "../components/component.module";
 import { CommonModule } from "@angular/common";
 import { HeaderComponent } from "./layout/header/header.component";
 import { LayoutComponent } from "./layout/layout.component";
-import { BrowserModule } from "@angular/platform-browser";
 import { FooterComponent } from "./layout/footer/footer.component";
+import { PageAvenuresComponent } from "./page.aventures/page.aventures.component";
+import { PageCommuniquesComponent } from "./page.communiques/page.communiques.component";
+import { PageFAQComponent } from "./page.faq/page.faq.component";
+import { PageJeuxNomadeComponent } from "./page.jeux.nomade/page.jeux.nomade.component";
 
 
 @NgModule({
@@ -19,6 +22,10 @@ import { FooterComponent } from "./layout/footer/footer.component";
         LayoutComponent,
         PageAccueilComponent,
         ReservationPage,
+        PageAvenuresComponent,
+        PageCommuniquesComponent,
+        PageFAQComponent,
+        PageJeuxNomadeComponent,
         TestComponent,
     ],
     imports:[

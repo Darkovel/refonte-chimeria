@@ -11,6 +11,8 @@ import { CommuniqueBandeauComponent } from './communique.bandeau/communique.band
 import { LocalisationBandeauComponent } from './localisation.bandeau/localisation.bandeau.component';
 import { ReviewBandeauComponent } from './review.bandeau/review.bandeau.component';
 import { ReviewItemComponent } from './review.bandeau/components/review.item.component';
+import { AllCommuniquesBandeauComponent } from './all.communiques.bandeau/all.communiques.bandeau.component';
+import { AventureCharonBandeauComponent } from './aventure.charon.bandeau/aventure.charon.bandeau.component';
 
 const index = [
     TitleBandeauComponent,
@@ -23,6 +25,8 @@ const index = [
     LocalisationBandeauComponent,
     ReviewBandeauComponent,
     ReviewItemComponent,
+    AllCommuniquesBandeauComponent,
+    AventureCharonBandeauComponent,
 ]
 
 @NgModule({
