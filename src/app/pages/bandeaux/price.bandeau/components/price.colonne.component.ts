@@ -15,12 +15,38 @@ import { Component, Input, AfterViewInit } from "@angular/core";
             </div>
         </div>
     `,
-    styles: [
-        ".group { text-align: center; font: normal normal normal 20px/23px var(--passheure-font-family-perpetua); letter-spacing: 0px; color: var(--passheure-white);}",
-        ".g-img { display: flex; height: 175px; width: 175px; align-items:center; justify-content: center; }",
-        ".g-hc { display: flex; height: 175px; width: 175px; align-items: center; justify-content: center; border: 2px dashed var(--passheure-blue); border-right: none}",
-        ".g-hp { display: flex; height: 175px; width: 175px; align-items: center; justify-content: center; border: 2px dashed var(--passheure-blue); border-right: none}",
-    ]
+    styles: [`
+        .group {
+            text-align: center; 
+            font: normal normal normal 20px/23px var(--passheure-font-family-perpetua); 
+            letter-spacing: 0px; 
+            color: var(--passheure-white);
+        }
+        .g-img { 
+            display: flex; 
+            height: 175px; 
+            width: 175px; 
+            align-items:center; 
+            justify-content: center; 
+        }
+        .g-hc { 
+            display: flex; 
+            height: 175px; 
+            width: 175px; 
+            align-items: center; 
+            justify-content: center; 
+            border: 2px dashed var(--passheure-blue); 
+            border-right: none;
+        }
+        .g-hp { display: flex; 
+            height: 175px; 
+            width: 175px; 
+            align-items: center; 
+            justify-content: center; 
+            border: 2px dashed var(--passheure-blue); 
+            border-right: none;
+        }
+    `]
 }) export class PriceColonneComponent implements AfterViewInit {
     @Input() price:{nbTeam:number, priceHP:number, priceHC:number};
 

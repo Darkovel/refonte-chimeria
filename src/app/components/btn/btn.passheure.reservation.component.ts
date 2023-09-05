@@ -20,19 +20,23 @@ import { Router } from "@angular/router";
              background-color: 
              var(--passheure-light-yellow); 
              border-radius: 63px; 
-             margin: auto}`,
-        `.centered {
+             margin: auto;
+        }
+        .centered {
             margin:0; 
             position: absolute; 
             width:100%;
             top:50%; 
             left:50%; 
             -ms-transform:translate(-50%, -50%);
-            transform: translate(-50%, -50%);}`,
-        `.btn-reservation-container p {
+            transform: translate(-50%, -50%);
+        }
+        .btn-reservation-container p {
             font: normal normal normal 34px/42px var(--passheure-font-family-blackchancery);
             letter-spacing: 0px;
-            color: var(--passheure-blue);}`],
+            color: var(--passheure-blue);
+        }`
+            ],
 }) export class BtnPassHeureReservationComponent {
     @Input() link;
 

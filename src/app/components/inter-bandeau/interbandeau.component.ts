@@ -1,4 +1,4 @@
-import { Component, Input, AfterViewInit  } from "@angular/core";
+import { Component, Input, AfterViewInit, OnInit  } from "@angular/core";
 
 export enum PositionInterBandeau {
     left, center, right
@@ -19,14 +19,14 @@ export enum PositionInterBandeau {
             z-index:1;
         }
     `]
-}) export class InterBandeauComponent implements AfterViewInit  {
+}) export class InterBandeauComponent implements OnInit  {
     @Input() imgUrl:string;
     @Input() position:PositionInterBandeau;
 
     translate:string;
     left:string;
 
-    ngAfterViewInit(): void {
+    ngOnInit(): void {
         switch(this.position) {
             case PositionInterBandeau.left:
                 this.translate = '-30% -30%';
