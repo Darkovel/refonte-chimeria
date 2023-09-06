@@ -9,6 +9,12 @@ import { LogoHeaderComponent } from "./logo/logo.header";
 import { BtnCommuniqueComponent } from "./btn/btn.passheure.communique.component";
 import { CommuniqueResumeComponent } from "./communique/communique.resume.component";
 import { InterBandeauComponent } from "./inter-bandeau/interbandeau.component";
+import { CalendarComponent } from "./calendar/calendar.component";
+import { LoadingComponent } from "./loading/loading.component";
+import { BrowserModule } from "@angular/platform-browser";
+
+/* Material */
+import { DialogReservation } from "./calendar/component/dialog-reservation";
 
 const index = [
        BtnPassHeureReservationComponent,
@@ -20,10 +26,14 @@ const index = [
        CommuniqueResumeComponent,
        BtnCommuniqueComponent,
        InterBandeauComponent,
+       CalendarComponent,
+       DialogReservation,
+       LoadingComponent,
 ]
 
 @NgModule({
-    imports: [RouterModule],
+    imports: [RouterModule, 
+        BrowserModule],
     declarations: index,
-    exports: index
+    exports: index,
 }) export class ComponentModule{}

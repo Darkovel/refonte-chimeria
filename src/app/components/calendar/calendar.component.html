@@ -1,0 +1,85 @@
+<section class="calendar-container">
+  
+  <div class="week-selector">
+    <button class="previous-week" [disabled]="prevBtnDisabled" (click)="prev()">
+      <img src="/assets/img/caroussel/fleche.svg" alt="Semaine précédente">
+    </button>
+    <h2>Semaine {{ chooseDate | date:'ww' }}</h2>
+    <button class="next-week" [disabled]="nextBtnDisabled" (click)="next()">
+      <img src="/assets/img/caroussel/fleche.svg" alt="Semaine suivante">
+    </button>
+  </div>
+  <div class="current-date">
+    <!-- <div class="btn btn-toolbar btn-chooseDate" (click)="picker.open()">
+      <input class="chooseDate-input" disabled matInput [value]="chooseDate" [min]="minDate" [max]="maxDate"
+             [matDatepicker]="picker" (dateChange)="selectDate($event)"
+             placeholder="Sélectionner une date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker [touchUi]="isTouch" disabled="false" #picker></mat-datepicker>
+    </div> -->
+  </div>
+
+  <div class="info-container" *ngIf="events; let events; else loading">
+    <div *ngIf="message" class="message" 
+      [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }">
+      {{message.text}}
+    </div>
+        
+    <div *ngIf="reservationInProgress()" class="alerte">
+      Vous avez une réservation en cours !
+      <button mat-raised-button color="primary" (click)="goToReservation()">Reprendre</button>
+    </div>
+  </div>
+
+  <div class="table-responsive" *ngIf="events!=null">
+    <thead>
+      <tr>
+        <td class="no-border"></td>
+        <td class="title-room white-square" *ngFor="let date of events.config.dates; let i = index"
+            [attr.colspan]="events.config.nbRooms">
+          {{ date | date:'EEEE' }}
+        </td>
+      </tr>
+    </thead>
+    <thead>
+      <tr>
+        <td class="no-border"></td>
+        <ng-template ngFor let-item [ngForOf]="events.config.dates" let-i="index">
+          <td *ngFor="let room of events.config.roomsInfo;" title="{{room.tooltip}}" class="white-square">
+            <div class="title-room-logo" *ngIf="room.logo; else elseBlock"><img class="table-header-logo"
+                                                                                src="{{room.logo}}"/></div>
+            <ng-template #elseBlock>{{room.id}}</ng-template>
+          </td>
+        </ng-template>
+      </tr>
+    </thead>
+
+    <tr *ngFor="let row of events.rows">
+      <th class="white-square title-hour"> {{row.hour}}</th>
+      <ng-template ngFor let-item [ngForOf]="row.events" let-i="index">
+        <td *ngFor="let roomEvent of item.rooms;" class="{{roomEvent.style}}" (click)="clickEvent(roomEvent)">
+          <img height="50%" aspect-ration="1/1">
+        </td>
+      </ng-template>
+    </tr>
+  </div>
+
+  <div class="legend-calendar">
+    <div class="legend-container">
+      <div class="legend-1"></div>
+      <p>Non disponible</p>
+    </div>
+    <div class="legend-container">
+      <div class="legend-2"></div>
+      <p>Heure creuse</p>
+    </div>
+    <div class="legend-container">
+      <div class="legend-3"></div>
+      <p>Heure pleine</p>
+    </div>
+  </div>
+</section>
+
+<ng-template #loading>
+  <loading></loading>
+</ng-template>

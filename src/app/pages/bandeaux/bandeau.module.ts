@@ -13,9 +13,11 @@ import { ReviewBandeauComponent } from './review.bandeau/review.bandeau.componen
 import { ReviewItemComponent } from './review.bandeau/components/review.item.component';
 import { AllCommuniquesBandeauComponent } from './all.communiques.bandeau/all.communiques.bandeau.component';
 import { AventureCharonBandeauComponent } from './aventure.charon.bandeau/aventure.charon.bandeau.component';
+import { CalendarBandeauComponent } from './calendar.bandeau/calendar.bandeau.component';
 
 const index = [
     TitleBandeauComponent,
+    CalendarBandeauComponent,
     CommuniqueBandeauComponent,
     DescriptionBandeauComponent,
     DefinitionEscapeComponent,

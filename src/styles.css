@@ -8,6 +8,8 @@
     --passheure-light-orange: #F28F38;
     --passheure-orange:#BF5A36;
     --passheure-blue:#112A37;
+    --passheure-light-green:#62B14F;
+    --passheure-green:#077100;
 
     /* Font/text values */
     --passheure-font-family-blackchancery: passheure-title-font;
@@ -50,3 +52,5 @@
 body {
     font-family:'passheure-title-font';
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
