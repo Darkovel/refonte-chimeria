@@ -3,27 +3,52 @@ import {Component, Input} from "@angular/core";
 @Component({
     selector: 'icon-description-escape',
     template: `
-        <div class="icon-escape-container">
-            <div class="image-container">
-                <img src={{image.src}} alt={{image.alt}}>
+        <div class="icon-container">
+            <div class="transparent-background">
+
             </div>
-            <div class="description-container">
-                    <p class="centered"><ng-content></ng-content></p>
+            <div class="icon-escape-container">
+                <div class="image-container">
+                    <img src={{image.src}} alt={{image.alt}} loading="lazy">
+                </div>
+                <div class="description-container">
+                        <p class="centered"><ng-content></ng-content></p>
+                </div>
             </div>
         </div>
     `,
     styles: [`
-        .icon-escape-container {
-            display:grid; 
+        .icon-container {
+            position:relative;
             height: 200px; 
             width: 200px; 
+            margin:25px; 
+            padding:15px
+        }
+
+        .transparent-background {
+            position:absolute;
+            top:0px;
+            left: 0px;
+            height: 100%; 
+            width: 100%; 
             border: 1px solid var(--passheure-gray); 
             background-color: var(--passheure-gray); 
             opacity: .52; 
             border-radius:52px; 
-            margin:25px; 
-            padding:15px
+            z-index: 1;
         }
+
+        .icon-escape-container {
+            position:relative;
+            display:grid; 
+            top:0px;
+            left: 0px;
+            height: 100%; 
+            width: 100%; 
+            z-index:2;
+        }
+
         .image-container {
             grid-row:1 / 2; 
             display:flex; 

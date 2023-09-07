@@ -39,13 +39,16 @@
     height: 175px;
     width: 175px;
     border: 2px dashed var(--passheure-blue);
+    border-right: none;
     border-left: none;
+    border-bottom: none;
 }
 
 .period-pleine {
     height: 175px;
     width: 175px;
     border: 2px dashed var(--passheure-blue);
+    border-right: none;
     border-left: none;
 }
 

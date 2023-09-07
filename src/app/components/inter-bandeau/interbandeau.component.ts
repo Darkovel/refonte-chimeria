@@ -7,11 +7,11 @@ export enum PositionInterBandeau {
 @Component({
     selector: 'inter-bandeau',
     template: `
-    <div class="inter-bandeau-container" 
-        [style.translate]="translate"
-        [style.left]="left">
-        <img [src]="imgUrl">
-    </div>
+        <div class="inter-bandeau-container" 
+            [style.translate]="translate"
+            [style.left]="left">
+            <img [src]="imgUrl" loading="lazy">
+        </div>
     `,
     styles: [`
         .inter-bandeau-container {

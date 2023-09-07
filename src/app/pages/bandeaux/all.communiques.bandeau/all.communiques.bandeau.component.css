@@ -1,0 +1,15 @@
+.all-communique-container {
+    background: #F8C79B 0% 0% no-repeat padding-box;
+    padding: 25px;
+    text-align: center;
+}
+
+.all-communique-container h2 {
+    font: normal normal normal 50px/63px var(--passheure-font-family-blackchancery);
+    color: var(--passheure-blue);
+}
+
+.communique-resumes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

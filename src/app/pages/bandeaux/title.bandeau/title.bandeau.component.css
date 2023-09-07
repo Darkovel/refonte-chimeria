@@ -1,12 +1,24 @@
 .title-container {
-    position: relative;
     padding-top: 45px;
     display: grid;
-    overflow: hidden;
-    width:auto;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
     left:0;
     right:0;
+}
+
+.main {
+    background-size:cover;
+    width:auto;
+    height: 100vh;
+}
+
+.secondary {
+    background-size:cover;
+    width:100%;
+    min-height: 50vh;
+    max-height: 100vh;
 }
 
 .title-container img {
@@ -25,7 +37,7 @@
     margin: auto;
 }
 
-.title h2 {
+.title h1 {
     font: normal normal normal 50px/63px var(--passheure-font-family-blackchancery);
     letter-spacing: 0px;
     color: var(--passheure-white);

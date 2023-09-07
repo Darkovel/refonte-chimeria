@@ -1,4 +1,8 @@
-import { AfterViewInit, Component, Input } from "@angular/core";
+import { Component, Input } from "@angular/core";
+
+export enum TitleType {
+    main="main", secondary="secondary"
+}
 
 @Component({
     selector: 'title-bandeau',
@@ -6,4 +10,6 @@ import { AfterViewInit, Component, Input } from "@angular/core";
     styleUrls: ['./title.bandeau.component.css'],
 }) export class TitleBandeauComponent {
 @Input() image:{url:string, alt: string};
+    @Input() type: TitleType;
+    main = TitleType.main;
 }

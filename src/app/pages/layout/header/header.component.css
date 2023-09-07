@@ -47,9 +47,13 @@ nav {
     width: 100%;
 }
 
+.navlinks-container {
+    display: flex;
+    justify-content: space-around;
+}
 
 .navlinks-container a {
-    margin: 0 10px;
+    margin: auto;
     font: normal normal normal 20px/23px var(--passheure-font-family-perpetua);
     letter-spacing: 0px;
     color: var(--passheure-white);

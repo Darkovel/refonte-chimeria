@@ -18,6 +18,7 @@ import { Router } from "@angular/router";
             width: 200px; 
             height: 35px;
             background-color: var(--passheure-orange); 
+            border-color: var(--passheure-gray);
             border-radius: 63px
         }
         .centered {

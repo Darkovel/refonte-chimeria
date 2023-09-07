@@ -1,10 +1,9 @@
-<div class="title-container">
-    <img src={{image.url}} alt={{image.alt}}>
+<section class="title-container {{type}} passheure-character-style-title" [style]="'background-image: url(' + image.url + ')'" loading="lazy">
     <div class="title">
-        <h2><ng-content></ng-content></h2>
+        <h1><ng-content></ng-content></h1>
     </div>
     
-    <div class="underline">
+    <div *ngIf="type === main" class="underline">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="411" height="59.28" viewBox="0 0 411 59.28">
             <defs>
               <clipPath id="clip-path">
@@ -18,4 +17,4 @@
             </g>
         </svg>
     </div>
-</div>
+</section>

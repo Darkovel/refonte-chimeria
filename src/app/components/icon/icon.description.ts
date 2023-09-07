@@ -4,7 +4,7 @@ import {Component, Input} from "@angular/core";
     selector: 'icon-description',
     template: `
         <div class="icon-description-container">
-            <img src={{image.src}} alt={{image.alt}}>
+            <img src={{image.src}} alt={{image.alt}} loading="lazy">
         </div>
         `,
     styles: [`

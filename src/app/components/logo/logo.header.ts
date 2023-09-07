@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
         <a href="./" class="nav-icon-logo"
             aria-label="visit homepage"
             aria-current="page">
-            <img src="assets/img/logos/Logo-couleur-alone.png" alt="Le PassHeure" height="100%" width="auto">
+            <img src="assets/img/logos/Logo-couleur-alone_200x200.png" alt="Le PassHeure" loading="lazy" height="100%" width="auto">
             <div class="text-logo-container">
                 <p class="title-logo">Le Pass'Heure</p>
                 <p class="descprition-logo">Live escape game</p>

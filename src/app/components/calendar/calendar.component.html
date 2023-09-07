@@ -2,11 +2,11 @@
   
   <div class="week-selector">
     <button class="previous-week" [disabled]="prevBtnDisabled" (click)="prev()">
-      <img src="/assets/img/caroussel/fleche.svg" alt="Semaine précédente">
+      <img src="/assets/img/caroussel/fleche.svg" alt="Semaine précédente" loading="lazy">
     </button>
     <h2>Semaine {{ chooseDate | date:'ww' }}</h2>
     <button class="next-week" [disabled]="nextBtnDisabled" (click)="next()">
-      <img src="/assets/img/caroussel/fleche.svg" alt="Semaine suivante">
+      <img src="/assets/img/caroussel/fleche.svg" alt="Semaine suivante" loading="lazy">
     </button>
   </div>
   <div class="current-date">
@@ -46,8 +46,9 @@
         <td class="no-border"></td>
         <ng-template ngFor let-item [ngForOf]="events.config.dates" let-i="index">
           <td *ngFor="let room of events.config.roomsInfo;" title="{{room.tooltip}}" class="white-square">
-            <div class="title-room-logo" *ngIf="room.logo; else elseBlock"><img class="table-header-logo"
-                                                                                src="{{room.logo}}"/></div>
+            <div class="title-room-logo" *ngIf="room.logo; else elseBlock">
+              <img class="table-header-logo" src="{{room.logo}}" loading="lazy"/>
+            </div>
             <ng-template #elseBlock>{{room.id}}</ng-template>
           </td>
         </ng-template>
@@ -58,7 +59,7 @@
       <th class="white-square title-hour"> {{row.hour}}</th>
       <ng-template ngFor let-item [ngForOf]="row.events" let-i="index">
         <td *ngFor="let roomEvent of item.rooms;" class="{{roomEvent.style}}" (click)="clickEvent(roomEvent)">
-          <img height="50%" aspect-ration="1/1">
+          <img height="50%" aspect-ration="1/1" loading="lazy">
         </td>
       </ng-template>
     </tr>

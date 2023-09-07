@@ -5,7 +5,7 @@ import { Component, Input, AfterViewInit } from "@angular/core";
     template: `
         <div class="group">
             <div class="g-img">
-                <img src={{listIconGroup[price.nbTeam-2]}} alt="Icon de groupe" height="80px" width="auto">
+                <img src={{listIconGroup[price.nbTeam-2]}} loading="lazy" alt="Icon de groupe" height="80px" width="auto">
             </div>
             <div class="g-hc">
                 <p>{{price.priceHC}} €</p>
@@ -28,6 +28,7 @@ import { Component, Input, AfterViewInit } from "@angular/core";
             width: 175px; 
             align-items:center; 
             justify-content: center; 
+            border-left: 2px dashed var(--passheure-blue); 
         }
         .g-hc { 
             display: flex; 
@@ -37,6 +38,7 @@ import { Component, Input, AfterViewInit } from "@angular/core";
             justify-content: center; 
             border: 2px dashed var(--passheure-blue); 
             border-right: none;
+            border-bottom: none;
         }
         .g-hp { display: flex; 
             height: 175px; 
