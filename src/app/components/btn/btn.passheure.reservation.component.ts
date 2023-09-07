@@ -39,11 +39,9 @@ import { Router } from "@angular/router";
         }`
             ],
 }) export class BtnPassHeureReservationComponent {
-    @Input() link;
-
     constructor(private router:Router) {}
 
     onClick() {
-        this.router.navigateByUrl(this.link);
+        this.router.navigateByUrl("/reservation");
     }
 }

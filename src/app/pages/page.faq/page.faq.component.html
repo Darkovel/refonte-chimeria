@@ -1,4 +1,168 @@
 <title-bandeau [image]="image" [type]="type">
     La Foire aux questions
 </title-bandeau>
+<section class="faq-container">
+    <div class="btn-container">
+        <button (click)="scrollToAnchor('details_mission')">Les détails de la mission</button>
+        <button (click)="scrollToAnchor('reservation')">La réservation</button>
+        <button (click)="scrollToAnchor('acolytes')">Vos acolytes</button>
+        <button (click)="scrollToAnchor('jour_j')">Votre jour J</button>
+        <button (click)="scrollToAnchor('interrogation_supp')">Vos interrogations supplémentaires</button>
+    </div>
+    
+    <section id="details_mission">
+        <h2>Les détails de la mission</h2>
+        <onglet-question question="Il y a des choses qui font peur là-dedans ?">
+                En guise de réponse, rien ne vaut une citation d’une de nos joueuses : « ça fait même pas peur ! ».
+                Vous l’aurez compris notre objectif n’est pas de vous terrifier mais de vous faire vivre une aventure pleine
+                de mystères. Donc aucune inquiétude à avoir : vous n’êtes pas dans une maison hantée !</onglet-question>
+        <onglet-question question="Je suis claustrophobe, est-ce une bonne idée de venir jouer chez vous ?">
+                Vous êtes le·la mieux placé·e pour répondre à cette question. Toutefois, sachez qu’en cas d’urgence, il est
+                toujours possible de sortir de nos salles. En outre, un·e Meneur·euse de Jeu vous suit, à l’aide d’un
+                système de vidéo-surveillance, durant toute la durée de votre session de jeu et peut donc intervenir à tout
+                moment.
+        </onglet-question>
+        <onglet-question question="C’est difficile ? Quel est le taux de réussite ?">
+                La mission que la Fondation Charon vous a confiée est assez complexe mais pas irréalisable sinon elle ne
+                vous aurait pas recruté·e·s pour la remplir ! Vous serez amené·e·s à faire preuve de logique et
+                d’observation pour mener à bien cette mission mais toute l’équipe a entièrement confiance en vous !
+                <br>
+                Nous avons fait le choix de ne pas calculer de taux de réussite pour nos jeux d’évasion grandeur nature,
+                nous vous proposons avant tout de participer à une expérience unique d’immersion qui vous fera voyager à
+                travers le temps.
+        </onglet-question>
+        <onglet-question question="Est-il nécessaire d’être un·e adepte des charades et un·e pro des équations mathématiques pour jouer ?">
+                La réponse est évidemment non ! Aucune compétence ou connaissance particulière ne sont requises pour
+                participer à nos jeux d’évasion grandeur nature.
+                Nos jeux sont accessibles à tous et ne font appel à aucun savoir ou expérience spécifique.
+        </onglet-question>
+        <onglet-question question="Il faut parler français ?">
+                Les explications de début et fin de jeu ainsi que les indices au cours de la session de jeu vous seront
+                donnés en français. Toutefois, il n’est pas nécessaire de comprendre le français pour résoudre les
+                différentes énigmes que vous rencontrerez sur votre chemin.
+        </onglet-question>
+        <onglet-question question="Et si notre équipe n’arrive pas à résoudre les énigmes ?">
+                Un·e Meneur·euse de Jeu est là pour vous accompagner tout au long de votre mission, il·elle suit avec
+                attention votre progression à l’aide de caméras et micros et saura vous mettre sur la bonne voie.
+        </onglet-question>
+        <onglet-question question="J’aimerais bien demander mon copain en mariage pendant la session de jeu, c’est possible ?">
+                Tout est possible ! Si vous avez des souhaits particuliers pour votre session de jeu, n’hésitez pas à nous
+                contacter avant pour discuter ensemble d’une personnalisation du scenario.
+        </onglet-question>
+    </section>
+    
+    <section id="reservation">
+        <h2>La réservation</h2>
+        <onglet-question question="C’est décidé, je veux venir jouer mais comment faire ?">
+                La réservation d’une session de jeu se fait directement en ligne sur notre site à partir de l’onglet «
+                Réservation ». Vous pourrez choisir le créneau horaire qui vous convient parmi les disponibilités affichées
+                en temps réel ainsi que le nombre de participant·e·s qui composera votre équipe.
+                <br>
+                Pour tout renseignement complémentaire, n’hésitez pas à nous contacter
+                par téléphone 
+                04 37 66 49 88 ou par mail
+                <a href="mailto:contact@lepassheure.fr">
+                    contact@lepassheure.fr.
+                </a> 
+        </onglet-question>
+        <onglet-question question="Le paiement se déroule comment ?">
+                Le règlement se fait en ligne par carte bancaire au moment de la réservation via une plateforme de paiement
+                sécurisé. La totalité du paiement est réglée lors de la réservation.
+        </onglet-question>
+        <onglet-question question="Comment savoir si ma réservation a bien été enregistrée ?">
+                Après avoir réservé votre créneau horaire et effectué le paiement en ligne, vous recevrez un mail de
+                confirmation de réservation qui vous garantit que votre réservation a bien été prise en compte. N’hésitez
+                pas à nous contacter directement par téléphone
+                04 37 66 49 88 ou par mail
+                <a href="mailto:contact@lepassheure.fr">
+                    contact@lepassheure.fr
+                </a>  si vous rencontrez un problème lors du processus de réservation.
+        </onglet-question>
+        <onglet-question question="Je voudrais annuler ma réservation, est-ce possible ?">
+                Conformément à l’article 121-21-8 du code de la consommation et à nos conditions générales de vente, une
+                session de jeu étant réservée à une date déterminée, aucune annulation ni aucun remboursement ne sont
+                possibles.
+        </onglet-question>
+        <onglet-question question="J’ai finalement un empêchement à la date de ma réservation, est-ce que je peux décaler la session de jeu ?">
+                Sous réserve de disponibilités, nous pouvons étudier votre demande de modification de réservation.
+                Contactez-nous directement pour que nous puissions voir avec vous ce qui nous est possible de faire.
+        </onglet-question>
+        <onglet-question question="Je voudrais venir avec mon entreprise pour une activité de team building, comment m’y prendre ?">
+            Pour l’organisation d’un événement professionnel, vous pouvez nous contacter directement par téléphone
+                04 37 66 49 88 ou par mail
+                <a href="mailto:contact@lepassheure.fr">
+                    contact@lepassheure.fr
+                </a> . Nous pouvons vous proposer différentes
+                formules selon vos besoins.
+        </onglet-question>
+    </section>
+    
+    <section id="acolytes">
+        <h2>Vos acolytes</h2>
+        <onglet-question question="Est-ce que des enfants peuvent participer ?">
+            Les enfants ne sont en aucun cas exclus de nos jeux d’évasion grandeur nature mais, étant donné la
+            complexité des énigmes proposées, nos jeux ne sont pas adaptés à de jeunes enfants.
+            Nos aventures sont conseillées aux mineur·e·s à partir de 12 ans à condition qu’ils·elles soient
+            accompagné·e·s d’au minimum un adulte.
+        </onglet-question>
+        <onglet-question question="Vos jeux d’évasion grandeur nature sont-ils déconseillés aux femmes enceintes ?">
+            Vos jeux d’évasion grandeur nature sont-ils déconseillés aux femmes enceintes ?
+        </onglet-question>
+        <onglet-question question="Votre établissement est-il accessible aux personnes à mobilité réduite ?">
+                Malheureusement, non. L’implantation même de notre établissement ne nous permet pas d’accueillir des
+                personnes à mobilité réduite.
+        </onglet-question>
+        <onglet-question question="J’ai déjà réservé une session de jeu mais finalement une personne supplémentaire veut rejoindre notre
+        équipe, comment je peux faire ?">
+                Aucun problème, nous acceptons les retardataires ! Vous pouvez ajouter autant de participant·e·s que vous
+                le souhaitez dans la limite de 6 personnes maximum. Dans ce cas là, vous devrez régler la différence de prix
+                directement sur place (par CB ou espèces) le jour de votre session de jeu.
+        </onglet-question>
+        <onglet-question question="En fin de compte, un membre de notre équipe ne peut plus venir à la session de jeu que nous avons déjà
+        réservée, comment faire ?">
+                Un·e camarade de mission vous a fait faux bond ?! Pas de problème, les entrées pour la session de jeu
+                n’étant pas nominatives, vous pouvez tout à fait convier un·e remplaçant·e de dernière minute pour que votre
+                groupe soit au complet.
+        </onglet-question>
+    </section>
+    
+    <section id="jour_j">
+        <h2>Votre jour J</h2>
+        <onglet-question question="Ça y est, nous avons réservé et notre équipe est prête à en découdre, à quelle heure devons-nous arriver ?">
+                Votre heure de rendez-vous est indiqué dans le mail de confirmation de réservation et correspond au créneau
+                horaire que vous avez choisi. Il n’est pas nécessaire d’arriver en avance, en revanche la ponctualité est
+                une qualité appréciée par la Fondation !
+        </onglet-question>
+        <onglet-question question="Il faut prévoir combien de temps sur place ?">
+                En prenant en compte les explications de début et fin de jeu et la session de jeu en elle-même, la
+                Fondation vous accueille pendant 1h30 environ.
+        </onglet-question>
+        <onglet-question question="Comment faut-il s’habiller ?">
+                Nos voyages temporels ne nécessitent pas de tenue particulière et aucune épreuve physique n’est présente
+                dans nos jeux d’évasion grandeur nature. Venez donc comme vous êtes et si vous souhaitez jouer la carte de
+                la discrétion, pourquoi ne pas venir costumé·e·s en accord avec le thème de la mission.
+        </onglet-question>
+    </section>
+    
+    <section id="interrogation_supp">
+        <h2>Vos interrogations supplémentaires</h2>
+        <onglet-question question="Et si malgré tout, nous n’arrivons pas à remplir la mission et à rejoindre la machine
+        temporelle en moins d’une heure, que se passe-t-il ?">
+                Les scientifiques de la Fondation arrivent parfois à maintenir la machine à voyager dans le temps quelques
+                minutes supplémentaires… Le cas échéant, vous resterez à jamais bloqué·e·s à travers le temps !
+        </onglet-question>
+        <onglet-question question="Et les besoins pressants, pouvons-nous en parler ?">
+                La Fondation vous conseille de passer aux toilettes avant d’embarquer à bord de la machine temporelle mais
+                si l’appel se fait trop pressant, vous pouvez toujours vous absenter quelques minutes et revenir
+                ensuite.
+        </onglet-question>
+        <onglet-question question="Avec la canicule à Lyon, ce n’est pas toujours évident de réfléchir, vous avez une solution aux chaleurs
+        estivales ?">
+                L’établissement de la Fondation dispose d’une température naturellement tempérée qui vous garantit une
+                fraîcheur appréciable dans nos salles, pour faire travailler vos méninges dans les meilleures conditions
+                qu’il soit.
+        </onglet-question>
+    </section>
+</section>
+
 <inter-bandeau imgUrl="/assets/img/inter-containers/icon-cercle-1.svg" [position]="left"></inter-bandeau>

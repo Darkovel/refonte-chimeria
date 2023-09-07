@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { PageAccueilComponent } from './pages/page.accueil/page.accueil.component';
 import { TestComponent } from './pages/test/test.component';
 import { ReservationPage } from './pages/page.reservation/page.reservation.component';
@@ -8,6 +8,12 @@ import { PageAvenuresComponent } from './pages/page.aventures/page.aventures.com
 import { PageCommuniquesComponent } from './pages/page.communiques/page.communiques.component';
 import { PageFAQComponent } from './pages/page.faq/page.faq.component';
 import { LayoutComponent } from './pages/layout/layout.component';
+
+
+const routerOptions: ExtraOptions = {
+  anchorScrolling: "enabled",
+  scrollPositionRestoration: "top"
+};
 
 const routes: Routes = [
   {path: '', component: LayoutComponent, children: [
@@ -26,7 +32,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes , routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

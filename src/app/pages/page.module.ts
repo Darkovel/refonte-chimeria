@@ -13,6 +13,7 @@ import { PageAvenuresComponent } from "./page.aventures/page.aventures.component
 import { PageCommuniquesComponent } from "./page.communiques/page.communiques.component";
 import { PageFAQComponent } from "./page.faq/page.faq.component";
 import { PageJeuxNomadeComponent } from "./page.jeux.nomade/page.jeux.nomade.component";
+import { OngletQuestionComponent } from "./page.faq/components/onglet.question.component";
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { PageJeuxNomadeComponent } from "./page.jeux.nomade/page.jeux.nomade.com
         PageAvenuresComponent,
         PageCommuniquesComponent,
         PageFAQComponent,
+        OngletQuestionComponent,
         PageJeuxNomadeComponent,
         TestComponent,
     ],

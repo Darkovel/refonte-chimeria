@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { PositionInterBandeau } from "src/app/components/inter-bandeau/interbandeau.component";
 import { TitleType } from "../bandeaux/title.bandeau/title.bandeau.component";
+import { ViewportScroller } from "@angular/common";
 
 @Component({
     selector: 'page-faq',
@@ -15,4 +16,12 @@ import { TitleType } from "../bandeaux/title.bandeau/title.bandeau.component";
     right = PositionInterBandeau.right;
 
     type = TitleType.secondary;
+
+    constructor(private scroller:ViewportScroller) {
+        scroller.setOffset([0,120])
+    }
+
+    scrollToAnchor(target:string) {
+        this.scroller.scrollToAnchor(target);
+      }
 }

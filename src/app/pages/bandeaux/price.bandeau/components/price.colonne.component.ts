@@ -28,7 +28,6 @@ import { Component, Input, AfterViewInit } from "@angular/core";
             width: 175px; 
             align-items:center; 
             justify-content: center; 
-            border-left: 2px dashed var(--passheure-blue); 
         }
         .g-hc { 
             display: flex; 

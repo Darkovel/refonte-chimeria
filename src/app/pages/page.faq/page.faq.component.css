@@ -1,0 +1,32 @@
+.faq-container {
+    background: #F8F5C3 0% 0% no-repeat padding-box;
+    text-align: center;
+    padding: 100px;
+}
+
+.btn-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.btn-container button {
+    background: var(--passheure-orange) 0% 0% no-repeat padding-box;
+    height: 120px;
+    width: 200px;
+    margin: auto;
+    border-radius: 30px;
+    border-color: var(passheure-gray);
+
+    font: normal normal normal 20px/25px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+}
+
+.faq-container h2 {
+    font: normal normal normal 40px/50px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-blue);
+    text-align: center;
+}

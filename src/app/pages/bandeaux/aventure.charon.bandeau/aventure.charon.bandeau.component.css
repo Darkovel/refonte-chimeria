@@ -45,3 +45,53 @@
     text-align: center;
     width: auto;
 }
+
+
+.mission-container {
+    display: block;
+}
+
+.photos-container {
+    height: auto;
+    background: var(--passheure-blue) 0% 0% no-repeat padding-box;
+}
+
+.mission-description-container {
+    padding: 50px;
+    background: var(--passheure-orange) 0% 0% no-repeat padding-box;
+    text-align: center;
+}
+
+.mission-description-container h2 {
+    font: normal normal normal 40px/50px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-blue);
+}
+
+.mission-description-container p {
+    font: normal normal normal 20px/23px var(--passheure-font-family-perpetua);
+    letter-spacing: 0px;
+    color: var(--passheure-blue);
+    max-width: 66%;
+    width: fit-content;
+    text-align: left;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.ordre-mission-btn {
+    width: 500px;
+    background: var(--passheure-blue) 0% 0% no-repeat padding-box;
+    border-radius: 63px;
+
+    font: normal normal normal 34px/42px var(--passheure-font-family-blackchancery);
+    letter-spacing: 0px;
+    color: var(--passheure-white);
+
+    border-color: var(--passheure-gray);
+}
+
+.prochainement {
+
+}

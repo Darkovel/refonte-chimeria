@@ -15,8 +15,10 @@
 }
 
 .secondary {
+    margin-top: 125px;
     background-size:cover;
     width:100%;
+    aspect-ratio: 4/1;
     min-height: 50vh;
     max-height: 100vh;
 }
