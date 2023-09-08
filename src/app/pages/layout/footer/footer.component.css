@@ -33,10 +33,11 @@
     margin: auto;
 }
 
-.links a {
+a {
     font: normal normal normal 20px/23px var(--passheure-font-family-perpetua);
     letter-spacing: 0px;
     color: var(--passheure-white);
+    text-decoration: none;
 }
 
 .networks {

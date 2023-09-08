@@ -52,8 +52,16 @@
 }
 
 .photos-container {
+    padding-top: 50px;
     height: auto;
     background: var(--passheure-blue) 0% 0% no-repeat padding-box;
+    background: linear-gradient(
+    to bottom,
+    var(--passheure-blue) 0%,
+    var(--passheure-blue) 75%,
+    var(--passheure-orange) 75%,
+    var(--passheure-orange) 100%
+  );
 }
 
 .mission-description-container {
