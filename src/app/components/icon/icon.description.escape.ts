@@ -55,9 +55,9 @@ import {Component, Input} from "@angular/core";
             align-content:center;
         }
         .image-container img {
-            max-width:100%; 
+            max-width:75%; 
             width:auto; 
-            max-height: 100%; 
+            max-height: 75%; 
             height:auto; 
             margin:auto;
         }
@@ -78,6 +78,43 @@ import {Component, Input} from "@angular/core";
             font: normal normal normal 18px/22px var(--passheure-font-family-blackchancery);  
             color:white; 
             text-align: center;
+        }
+
+        @media(max-width:700px) {
+            .icon-container {
+                height: 150px; 
+                width: 150px; 
+                margin:10px; 
+                padding:5px
+            }
+
+            .transparent-background {
+                border-radius:40px; 
+            }
+
+            .description-container {
+                margin:5px;
+            }
+
+            .description-container p {
+                font: normal normal normal 12px/18px var(--passheure-font-family-blackchancery);
+            }
+        }
+
+        @media(max-width:500px) {
+            .icon-container {
+                height: 100px; 
+                width: 100px; 
+                margin:auto; 
+                padding:5px
+            }
+
+            .transparent-background {
+                border-radius:20px; 
+            }
+            .description-container p {
+                font: normal normal normal 10px/14px var(--passheure-font-family-blackchancery);
+            }
         }
     `
     ]

@@ -9,7 +9,6 @@
 nav {
     position: fixed;
     width: 100%;
-    height: content;
     display: flex;
     align-items: center;
     padding: 15px 25px;
@@ -87,7 +86,7 @@ nav {
 
     .nav-icon {
         order: 2;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .nav-icon span {
@@ -96,6 +95,8 @@ nav {
 
     .main-navlinks {
         order: 1;
+        width: fit-content;
+        margin-left: 0px;
     }
 
     .hamburger {
@@ -146,6 +147,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content:start;
         position: absolute;
         background: var(--passheure-blue);
         top: 100%;

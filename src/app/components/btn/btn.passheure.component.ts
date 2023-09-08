@@ -19,7 +19,8 @@ import { Router } from "@angular/router";
             height: 70px ;
             background-color: var(--passheure-orange); 
             border-color: var(--passheure-gray);
-            border-radius: 63px}
+            border-radius: 63px;
+        }
         .centered {
             margin:0; 
             position: absolute; 
@@ -27,12 +28,26 @@ import { Router } from "@angular/router";
             top:50%; 
             left:50%; 
             -ms-transform:translate(-50%, -50%);
-            transform: translate(-50%, -50%);}
+            transform: translate(-50%, -50%);
+        }
         .btn-container-passheure p {
             font: normal normal normal 25px/32px var(--passheure-font-family-blackchancery);
             letter-spacing: 0px;
             color: var(--passheure-white);
-            }`
+        }
+            
+        @media(max-width:700px) {
+            .btn-container-passheure {
+                width:200px ; 
+                height: 50px ;
+            }
+
+            .btn-container-passheure p {
+                font: normal normal normal 16px/24px var(--passheure-font-family-blackchancery);
+            }
+        }
+            
+            `
         ],
 }) export class BtnPassHeureComponent {
     @Input() link;

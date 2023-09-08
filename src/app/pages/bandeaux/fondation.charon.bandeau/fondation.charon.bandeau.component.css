@@ -1,13 +1,14 @@
 .container {
-    display: flex;
-    width: auto;
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
     background-color: var(--passheure-blue);
 }
 
 .plan-container {
-    display: block;
-    width: 50%;
-    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
     z-index: 2;
 }
 
@@ -16,9 +17,7 @@
 }
 
 .description-container {
-    display: block;
-    width: 50%;
-    margin: 50px;
+    margin: 35px;
 }
 
 .title {
@@ -47,14 +46,10 @@
 .button-charon {
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin: 30px;
 }
 
 @media (max-width: 1300px) {
-    .description-container {
-        margin: 35px;
-    }
-
     .title {
         font: normal normal normal 35px/45px var(--passheure-font-family-blackchancery);
     }
@@ -69,8 +64,21 @@
 }
 
 @media (max-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100% 100%;
+    }
+
+    .plan-container {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
     .description-container {
-        margin: 25px;
+        margin: 10px;
     }
 
     .title {
@@ -79,5 +87,51 @@
 
     .description {
         font: normal normal normal 12px/18px var(--passheure-font-family-perpetua);
+    }
+
+    .button-charon {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+@media (max-width: 700px) {
+    .title {
+        font: normal normal normal 30px/40px var(--passheure-font-family-blackchancery);
+    }
+
+    .title h3 {
+        margin: 0;
+    }
+
+    .description {
+        font: normal normal normal 12px/18px var(--passheure-font-family-perpetua);
+    }
+
+    .button-charon {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100% 100% 100%;
+    }
+
+    .plan-container {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .button-charon {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
 }

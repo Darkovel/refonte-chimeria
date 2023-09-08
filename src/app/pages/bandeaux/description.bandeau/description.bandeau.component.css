@@ -29,3 +29,22 @@
     padding: 25px;
     margin: auto;
 }
+
+@media(max-width: 700px) {
+    .title {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media(max-width: 500px) {
+    .title {
+        font: normal normal normal 24px/30px var(--passheure-font-family-blackchancery);
+        padding: 50px;
+        padding-bottom: 25px;
+    }
+
+    .description {
+        font: normal normal normal 18px/24px var(--passheure-font-family-perpetua);
+    }
+}

@@ -51,3 +51,30 @@
     margin-right: auto;
 }
 
+@media(max-width:700px) {
+    .title-container {
+        padding-top: 70px;
+    }
+
+    .title h1 {
+        font: normal normal normal 40px/53px var(--passheure-font-family-blackchancery);
+    }
+}
+
+@media(max-width:500px) {
+    .secondary {
+        margin-top: 25px;
+    }
+
+    .title h1 {
+        font: normal normal normal 40px/53px var(--passheure-font-family-blackchancery);
+    }
+
+    .underline img {
+        position: relative;
+        height: auto;
+        width: auto;
+        z-index: 1;
+    }
+}
+

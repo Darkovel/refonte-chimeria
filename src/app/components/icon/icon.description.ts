@@ -19,6 +19,14 @@ import {Component, Input} from "@angular/core";
         .icon-description-container img {
             margin: 10px;
         }
+
+        @media(max-width:500px) {
+            .icon-description-container {
+                height: 100px; 
+                width: 100px; 
+                margin: 10px;
+            }
+        }
     `]
 }) export class IconDescriptionComponent {
     @Input() image: {src: string, alt: string};

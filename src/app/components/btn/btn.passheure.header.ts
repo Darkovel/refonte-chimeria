@@ -34,6 +34,26 @@ import { Router } from "@angular/router";
             font: normal normal normal 20px/25px var(--passheure-font-family-blackchancery);
             letter-spacing: 0px;
             color: var(--passheure-white);
+        }
+        
+        @media(max-width:700px) {
+            .btn-header-container {
+                width: 150px; 
+                height: 35px;
+            }
+            .btn-header-container p {
+                font: normal normal normal 18px/23px var(--passheure-font-family-blackchancery);
+            }
+        }
+        
+        @media(max-width:500px) {
+            .btn-header-container {
+                width: 100px; 
+                height: 35px;
+            }
+            .btn-header-container p {
+                font: normal normal normal 16px/20px var(--passheure-font-family-blackchancery);
+            }
         }`
         ],
 }) export class BtnPassHeureHeaderComponent {

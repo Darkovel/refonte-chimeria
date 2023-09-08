@@ -36,6 +36,17 @@ import { Router } from "@angular/router";
             font: normal normal normal 34px/42px var(--passheure-font-family-blackchancery);
             letter-spacing: 0px;
             color: var(--passheure-blue);
+        }
+        
+        @media(max-width:500px) {
+            .btn-reservation-container {
+                width:200px; 
+                height: 40px;
+            }
+
+            .btn-reservation-container p {
+                font: normal normal normal 20px/26px var(--passheure-font-family-blackchancery);
+            }
         }`
             ],
 }) export class BtnPassHeureReservationComponent {
