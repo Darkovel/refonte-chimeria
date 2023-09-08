@@ -2,7 +2,15 @@
     <h2>
         Communiqués
     </h2>
+    <div class="no-communique" *ngIf="resumes.length === 0">
+        Aucun communiqué pour le moment... Nous y travaillons, promis !
+    </div>
     <div class="communique-resumes">
         <communique-resume *ngFor="let resume of resumes" [resume]="resume"></communique-resume>
     </div>
+
+    <img *ngIf="!isLoaded" (click)="addNextResumeCommunique(6)" 
+        src="/assets/img/caroussel/fleche.svg" alt="Plus de communiqués"
+        height="60px" width="60px"
+        style="transform:rotate(90deg);">
 </section>

@@ -37,65 +37,69 @@ export interface Review {
     providedIn: 'root'
 }) export class ReviewService {
     url = '';
-    firstReview:Review = {
-        name:"Comment 1",
-        reviewId:"kjfkdskhsd",
-        reviewer: {
-            profilePhotoUrl: "/",
-            displayName: "Mr X",
-            isAnonymous: true
+    reviews: Review[] = [
+        {
+            name:"Comment 1",
+            reviewId:"kjfkdskhsd",
+            reviewer: {
+                profilePhotoUrl: "/",
+                displayName: "Mr X",
+                isAnonymous: true
+            },
+            starRating: StarRating.FIVE,
+            comment: "On a fait la congrégation à 2 et pour moi c'était le meilleur escape que j'ai fait à Lyon ! Attention, cela peut déplaire à ceux qui aiment les escapes classiques, avec des codes, des cadenas, etc... Et c'est justement ça que j'ai aimé, ça change ! Et c'est juste, magique :) Tout est fait de manière artisanale, et j'ai trouvé le travail admirable.",
+            createTime: "il y a 3 semaines",
+            updateTime: "il y a 3 semaines",
+            reviewReply: null
         },
-        starRating: StarRating.FIVE,
-        comment: "On a fait la congrégation à 2 et pour moi c'était le meilleur escape que j'ai fait à Lyon ! Attention, cela peut déplaire à ceux qui aiment les escapes classiques, avec des codes, des cadenas, etc... Et c'est justement ça que j'ai aimé, ça change ! Et c'est juste, magique :) Tout est fait de manière artisanale, et j'ai trouvé le travail admirable.",
-        createTime: "il y a 3 semaines",
-        updateTime: "il y a 3 semaines",
-        reviewReply: null
-    }
-
-    nextReview:Review = {
-        name:"Comment 2",
-        reviewId:"dfkjhkfsdkhljs",
-        reviewer: {
-            profilePhotoUrl: "/",
-            displayName: "Mme Y",
-            isAnonymous: false
+        {
+            name:"Comment 2",
+            reviewId:"dfkjhkfsdkhljs",
+            reviewer: {
+                profilePhotoUrl: "/",
+                displayName: "Mme Y",
+                isAnonymous: false
+            },
+            starRating: StarRating.FOUR,
+            comment: "On a fait la congrégation à 2 et pour moi c'était le meilleur escape que j'ai fait à Lyon ! Attention, cela peut déplaire à ceux qui aiment les escapes classiques, avec des codes, des cadenas, etc... Et c'est justement ça que j'ai aimé, ça change ! Et c'est juste, magique :) Tout est fait de manière artisanale, et j'ai trouvé le travail admirable.",
+            createTime: "il y a 3 semaines",
+            updateTime: "il y a 3 semaines",
+            reviewReply: null
         },
-        starRating: StarRating.FOUR,
-        comment: "On a fait la congrégation à 2 et pour moi c'était le meilleur escape que j'ai fait à Lyon ! Attention, cela peut déplaire à ceux qui aiment les escapes classiques, avec des codes, des cadenas, etc... Et c'est justement ça que j'ai aimé, ça change ! Et c'est juste, magique :) Tout est fait de manière artisanale, et j'ai trouvé le travail admirable.",
-        createTime: "il y a 3 semaines",
-        updateTime: "il y a 3 semaines",
-        reviewReply: null
-    }
-
-    previousReview:Review = {
-        name:"Comment 3",
-        reviewId:"skhukhjsjhss",
-        reviewer: {
-            profilePhotoUrl: "/",
-            displayName: "Mr X",
-            isAnonymous: false
-        },
-        starRating: StarRating.FIVE,
-        comment: "On a fait la congrégation à 2 et pour moi c'était le meilleur escape que j'ai fait à Lyon ! Attention, cela peut déplaire à ceux qui aiment les escapes classiques, avec des codes, des cadenas, etc... Et c'est justement ça que j'ai aimé, ça change ! Et c'est juste, magique :) Tout est fait de manière artisanale, et j'ai trouvé le travail admirable.",
-        createTime: "il y a 3 semaines",
-        updateTime: "il y a 3 semaines",
-        reviewReply: null
-    }
+        {
+            name:"Comment 3",
+            reviewId:"skhukhjsjhss",
+            reviewer: {
+                profilePhotoUrl: "/",
+                displayName: "Mr X",
+                isAnonymous: false
+            },
+            starRating: StarRating.FIVE,
+            comment: "On a fait la congrégation à 2 et pour moi c'était le meilleur escape que j'ai fait à Lyon ! Attention, cela peut déplaire à ceux qui aiment les escapes classiques, avec des codes, des cadenas, etc... Et c'est justement ça que j'ai aimé, ça change ! Et c'est juste, magique :) Tout est fait de manière artisanale, et j'ai trouvé le travail admirable.",
+            createTime: "il y a 3 semaines",
+            updateTime: "il y a 3 semaines",
+            reviewReply: null
+        }
+]
 
     constructor(private http: HttpClient) {
 
     }
 
+    getReviews(): Review[] {
+        return this.reviews;
+    }
+
     getFirstReview(): Review {
-        return this.firstReview;
+        return this.reviews[0];
     }
 
     getNextReview(reviewId: string): Review {
-        return this.nextReview;
+        return this.reviews[1];
     }
 
     getPreviousReview(reviewId: string): Review {
-        return this.previousReview;
+        return this.reviews[2];
     }
 
 /*     getFirstReview(): Observable<Review> {

@@ -13,3 +13,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.no-communique {
+    font: normal normal normal 20px/23px var(--passheure-font-family-perpetua);
+    padding-bottom: 50px;
+}
