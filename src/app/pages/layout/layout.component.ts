@@ -12,7 +12,7 @@ import {Component} from "@angular/core";
     links:{url:string, name:string}[] = [
         {url:'/accueil', name:'Accueil'},
         {url:'/nos-aventures', name:'Nos aventures'},
-        {url:'/jeux-nomades', name:'Jeux nomades'},
+        //{url:'/jeux-nomades', name:'Jeux nomades'},
         {url:'/communiques', name:'Communiqués'},
         {url:'/faq', name:'FAQ'}
     ]
