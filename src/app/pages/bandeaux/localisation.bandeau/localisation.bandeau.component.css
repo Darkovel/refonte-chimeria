@@ -71,6 +71,11 @@ a {
 }
 
 @media(max-width:1000px) {
+    .localisation-bandeau-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .localisation-container {
         display: grid;
         grid-template-columns: 1fr;

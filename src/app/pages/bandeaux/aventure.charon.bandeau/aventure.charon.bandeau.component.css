@@ -30,7 +30,7 @@
     width: 300px;
     height: 200px;
     background: var(--passheure-orange) 0% 0% no-repeat padding-box;
-    border-radius: 50px;
+    border-radius: 25%;
     border-color: var(--passheure-gray);
     margin: 20px;
 }
@@ -54,6 +54,8 @@
 .photos-container {
     padding-top: 50px;
     height: auto;
+    max-width: 100%;
+    
     background: var(--passheure-blue) 0% 0% no-repeat padding-box;
     background: linear-gradient(
     to bottom,
@@ -62,6 +64,15 @@
     var(--passheure-orange) 75%,
     var(--passheure-orange) 100%
   );
+
+    overflow: hidden;
+}
+
+.photos-container img {
+    position: relative;
+    min-width: 900px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .mission-description-container {
@@ -89,6 +100,7 @@
 }
 
 .ordre-mission-btn {
+    max-width: 90%;
     width: 500px;
     background: var(--passheure-blue) 0% 0% no-repeat padding-box;
     border-radius: 63px;
@@ -102,4 +114,54 @@
 
 .prochainement {
 
+}
+
+@media(max-width:900px) {
+    .aventure-charon-container {
+        padding-top: 100px;
+    }
+
+    .aventure-charon-container p {
+        width: 95%;
+    }
+
+    .mission-description-container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .mission-description-container p {
+        max-width: 85%;
+    }
+}
+
+@media(max-width:700px) {
+
+    .aventures-btn-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        padding: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .aventure-btn {
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+    }
+
+    .aventure-btn p {
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    .mission-description-container p {
+        font: normal normal normal 18px/21px var(--passheure-font-family-perpetua);
+    }
+    .ordre-mission-btn {
+        font: normal normal normal 20px/28px var(--passheure-font-family-blackchancery);
+    }
 }
