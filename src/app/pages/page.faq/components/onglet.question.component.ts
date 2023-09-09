@@ -20,7 +20,9 @@ import { AfterViewInit, Component, ElementRef, Input, ViewChild } from "@angular
     styles: [`
         .onglet-question-container {
             margin: auto;
-            width: 75%;
+            min-width: 75%;
+            width: 750px;
+            max-width: 95%;
             margin-bottom:15px;
             overflow-y: hidden;
         }
@@ -62,6 +64,32 @@ import { AfterViewInit, Component, ElementRef, Input, ViewChild } from "@angular
             padding : 30px;
             padding-left : 50px;
             z-index:1;
+        }
+
+        @media(max-width:900px) {
+            .onglet-question-container {
+                margin: auto;
+                margin-right: 25%;
+                width: 100%;
+                margin-bottom:15px;
+                overflow-y: hidden;
+            }
+
+            .onglet-bar {
+                border-radius: 0px 45px 45px 0px;
+                padding-left: 20px;
+            }
+
+            .question {
+                font: normal normal normal 18px/24px var(--passheure-font-family-blackchancery);
+            }
+        }
+
+        @media(max-width:500px) {
+
+            .question {
+                font: normal normal normal 16px/20px var(--passheure-font-family-blackchancery);
+            }
         }
     `],
 
