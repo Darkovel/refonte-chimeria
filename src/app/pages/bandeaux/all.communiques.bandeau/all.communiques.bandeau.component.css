@@ -12,9 +12,25 @@
 .communique-resumes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
 }
 
 .no-communique {
     font: normal normal normal 20px/23px var(--passheure-font-family-perpetua);
     padding-bottom: 50px;
+}
+
+@media(max-width:800px) {
+    .communique-resumes {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width:500px) {
+    .communique-resumes {
+        grid-template-columns: 1fr;
+    }
 }
