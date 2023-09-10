@@ -11,12 +11,24 @@
 }
 
 .communique-resumes {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
     width: fit-content;
     margin: auto;
 }
 
 .btn-all-communiques {
     width: fit-content;
+    padding-top: 25px;
     margin: auto;
+}
+
+@media(max-width:800px) {
+    .communique-resumes {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+        padding-bottom: 25px;
+    }
 }
