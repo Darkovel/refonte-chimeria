@@ -1,7 +1,9 @@
 .price-bandeau-container {
     height: fit-content;
     background: var(--passheure-gray) 0% 0% no-repeat padding-box;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
 }
 
 .price-title {
@@ -17,7 +19,8 @@
 }
 
 .table-price {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;  
     align-items: center;
     justify-content: center;
 }
@@ -31,25 +34,9 @@
 }
 
 .period-img {
-    height: 175px;
     width: 175px;
-}
-
-.period-creuse {
-    height: 175px;
-    width: 175px;
-    border: 2px dashed var(--passheure-blue);
-    border-right: none;
-    border-left: none;
-    border-bottom: none;
-}
-
-.period-pleine {
-    height: 175px;
-    width: 175px;
-    border: 2px dashed var(--passheure-blue);
-    border-right: none;
-    border-left: none;
+    aspect-ratio: 1/1;
+    border-bottom: 2px dashed var(--passheure-blue);
 }
 
 .table-legend {
@@ -59,3 +46,43 @@
     text-align: center;
 }
 
+@media(max-width:1250px) {
+    .period-img  {
+        width: 150px; 
+    }
+}
+
+@media(max-width:1000px) {
+    .period-type {
+        font: normal normal normal 14px/16px var(--passheure-font-family-perpetua);
+    }
+
+    .period-img  {
+        width: 100px; 
+    }
+}
+
+@media(max-width:700px) {
+    .table-price {
+        grid-auto-flow: row;
+    }
+
+    .period-type {
+        display: flex;
+        font: normal normal normal 20px/17px var(--passheure-font-family-perpetua);
+    }
+
+    .period-img  {
+        width: 175px; 
+    }
+}
+
+@media(max-width:500px) {
+    .period-type {
+        font: normal normal normal 14px/16px var(--passheure-font-family-perpetua);
+    }
+
+    .period-img  {
+        width: 100px; 
+    }
+}

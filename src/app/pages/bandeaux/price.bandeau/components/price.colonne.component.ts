@@ -4,48 +4,71 @@ import { Component, Input, AfterViewInit } from "@angular/core";
     selector: 'price-colonne',
     template: `
         <div class="group">
-            <div class="g-img">
-                <img src={{listIconGroup[price.nbTeam-2]}} loading="lazy" alt="Icon de groupe" height="80px" width="auto">
+            <div class="g-case g-img">
+                <img src={{listIconGroup[price.nbTeam-2]}} loading="lazy" alt="Icon de groupe" height="50%" width="auto">
             </div>
-            <div class="g-hc">
+            <div class="g-case g-h">
                 <p>{{price.priceHC}} €</p>
             </div>
-            <div class="g-hp">
+            <div class="g-case g-h">
                 <p>{{price.priceHP}} €</p>
             </div>
         </div>
     `,
     styles: [`
         .group {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 100%;
             text-align: center; 
             font: normal normal normal 20px/23px var(--passheure-font-family-perpetua); 
             letter-spacing: 0px; 
             color: var(--passheure-white);
         }
-        .g-img { 
-            display: flex; 
-            height: 175px; 
+
+        .g-case {
+            display: flex;
             width: 175px; 
+            aspect-ratio: 1/1;
             align-items:center; 
             justify-content: center; 
         }
-        .g-hc { 
-            display: flex; 
-            height: 175px; 
-            width: 175px; 
-            align-items: center; 
-            justify-content: center; 
-            border: 2px dashed var(--passheure-blue); 
-            border-right: none;
-            border-bottom: none;
+
+        .g-img { 
+            border-bottom: 2px dashed var(--passheure-blue); 
         }
-        .g-hp { display: flex; 
-            height: 175px; 
-            width: 175px; 
-            align-items: center; 
-            justify-content: center; 
-            border: 2px dashed var(--passheure-blue); 
-            border-right: none;
+        .g-h { 
+            border-left: 2px dashed var(--passheure-blue);
+            border-bottom: 2px dashed var(--passheure-blue); 
+        }
+
+        @media(max-width:1250px) {
+            .g-case {
+                width: 150px; 
+            }
+        }
+
+        @media(max-width:1000px) {
+            .g-case {
+                width: 100px; 
+            }
+        }
+
+        @media(max-width:700px) {
+            .group {
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .g-case {
+                width: 175px; 
+            }
+        }
+        @media(max-width:500px) {
+            .g-case  {
+                width: 100px; 
+            }        
         }
     `]
 }) export class PriceColonneComponent implements AfterViewInit {
