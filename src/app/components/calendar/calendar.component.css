@@ -1,8 +1,10 @@
 .calendar-container {
-  display: block;
-  width: 100%;
-  max-width: 70%;
+  display: grid;
+  grid-auto-flow: row;
+  width: auto;
+  max-width: 95%;
   margin: auto;
+  justify-content: center;
 }
 
 .info-container {
@@ -83,10 +85,14 @@ button[disabled]{
   color: var(--passheure-blue);
 }
 
+.square {
+  height: 60px;
+  aspect-ratio: 1/1;
+}
+
 .roomUsed {
   background: var(--passheure-orange) 0% 0% no-repeat padding-box;
   border: 1px solid var(--passheure-gray);
-  height: 60px;
 }
 
 .roomUsed img {
@@ -97,7 +103,6 @@ button[disabled]{
 .roomOffPeak {
   background: var(--passheure-light-green) 0% 0% no-repeat padding-box;
   border: 1px solid var(--passheure-gray);
-  height: 60px;
 }
 
 .roomOffPeak img{
@@ -108,7 +113,6 @@ button[disabled]{
 .roomPeak {
   background: var(--passheure-green) 0% 0% no-repeat padding-box;
   border: 1px solid var(--passheure-gray);
-  height: 60px;
 }
 
 .roomPeak img {
@@ -134,23 +138,54 @@ button[disabled]{
   padding-left: 15px;
 }
 
-.legend-1 {
+.legend {
   height: 25px;
   width: 25px;
-  background: var(--passheure-orange) 0% 0% no-repeat padding-box;
-  border: 1px solid var(--passheure-gray);
 }
 
-.legend-2 {
-  height: 25px;
-  width: 25px;
-  background: var(--passheure-light-green) 0% 0% no-repeat padding-box;
-  border: 1px solid var(--passheure-gray);
-}
 
-.legend-3 {
-  height: 25px;
-  width: 25px;
-  background: var(--passheure-green) 0% 0% no-repeat padding-box;
-  border: 1px solid var(--passheure-gray);
+@media (max-width: 700px) {
+  .title-room {
+    writing-mode: vertical-rl;
+    font: normal normal normal 18px/23px var(--passheure-font-family-perpetua);
+    justify-content: center;
+  }
+
+  .title-hour {
+    width: 80px;
+    font: normal normal normal 18px/23px var(--passheure-font-family-perpetua);
+    color: var(--passheure-blue);
+  }
+
+  .title-room p {
+    margin: auto;
+  }
+
+  .white-square {
+    height: 40px;
+  }
+
+  .week-selector {
+    font: normal normal normal 30px/40px var(--passheure-font-family-blackchancery);
+  }
+
+  .square {
+    height: 40px;
+    aspect-ratio: 1/1;
+  }
+
+  .legend-calendar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .legend-container {
+    font: normal normal normal 18px/20px var(--passheure-font-family-perpetua);
+  }
+
+  .legend-container:nth-child(1) {
+    order: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }

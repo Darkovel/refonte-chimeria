@@ -37,7 +37,7 @@
         <td class="no-border"></td>
         <td class="title-room white-square" *ngFor="let date of events.config.dates; let i = index"
             [attr.colspan]="events.config.nbRooms">
-          {{ date | date:'EEEE' }}
+          <p>{{ date | date:'EEEE' }}</p>
         </td>
       </tr>
     </thead>
@@ -58,7 +58,7 @@
     <tr *ngFor="let row of events.rows">
       <th class="white-square title-hour"> {{row.hour}}</th>
       <ng-template ngFor let-item [ngForOf]="row.events" let-i="index">
-        <td *ngFor="let roomEvent of item.rooms;" class="{{roomEvent.style}}" (click)="clickEvent(roomEvent)">
+        <td *ngFor="let roomEvent of item.rooms;" class="square {{roomEvent.style}}" (click)="clickEvent(roomEvent)">
           <img height="50%" aspect-ration="1/1" loading="lazy">
         </td>
       </ng-template>
@@ -67,15 +67,15 @@
 
   <div class="legend-calendar">
     <div class="legend-container">
-      <div class="legend-1"></div>
+      <div class="roomUsed legend"></div>
       <p>Non disponible</p>
     </div>
     <div class="legend-container">
-      <div class="legend-2"></div>
+      <div class="roomOffPeak legend"></div>
       <p>Heure creuse</p>
     </div>
     <div class="legend-container">
-      <div class="legend-3"></div>
+      <div class="roomPeak legend"></div>
       <p>Heure pleine</p>
     </div>
   </div>
