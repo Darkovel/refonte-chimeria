@@ -8,6 +8,7 @@ import { PageAvenuresComponent } from './pages/page.aventures/page.aventures.com
 import { PageCommuniquesComponent } from './pages/page.communiques/page.communiques.component';
 import { PageFAQComponent } from './pages/page.faq/page.faq.component';
 import { LayoutComponent } from './pages/layout/layout.component';
+import { PageLegacyComponent } from './pages/page.legacy/page.legacy.component';
 
 
 const routerOptions: ExtraOptions = {
@@ -24,7 +25,7 @@ const routes: Routes = [
     { path: "jeux-nomades", component: PageJeuxNomadeComponent},
     { path: "communiques", component: PageCommuniquesComponent},
     { path: "faq", component: PageFAQComponent},
-    { path: "legacy", component: PageAccueilComponent},
+    { path: "legacy", component: PageLegacyComponent},
     { path: "partenaire", component: PageAccueilComponent},
     { path: "test", component: TestComponent}
   ]

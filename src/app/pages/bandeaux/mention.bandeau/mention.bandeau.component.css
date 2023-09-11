@@ -1,0 +1,35 @@
+.mention-container {
+    background-color: var(--passheure-blue);
+    font-family: var(--passheure-font-family-perpetua);
+    color: var(--passheure-white);
+
+    padding: 50px;
+}
+
+.mention-container h2 {
+    text-align: center;
+}
+
+.ss-mention-container {
+    padding-bottom: 25px;
+}
+
+@media(min-width:700px) {
+    .mention-container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .mention-container h2 {
+        font-size: 40px;
+    }
+
+    .mention-container h3 {
+        font-size: 30px;
+    }
+
+    .mention-container p {
+        font-size: 24px;
+        margin-left: 50px;
+    }
+}

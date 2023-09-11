@@ -14,6 +14,7 @@ import { PageCommuniquesComponent } from "./page.communiques/page.communiques.co
 import { PageFAQComponent } from "./page.faq/page.faq.component";
 import { PageJeuxNomadeComponent } from "./page.jeux.nomade/page.jeux.nomade.component";
 import { OngletQuestionComponent } from "./page.faq/components/onglet.question.component";
+import { PageLegacyComponent } from "./page.legacy/page.legacy.component";
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { OngletQuestionComponent } from "./page.faq/components/onglet.question.c
         PageFAQComponent,
         OngletQuestionComponent,
         PageJeuxNomadeComponent,
+        PageLegacyComponent,
         TestComponent,
     ],
     imports:[
