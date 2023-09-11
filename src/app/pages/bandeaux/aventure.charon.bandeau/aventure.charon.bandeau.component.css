@@ -52,6 +52,7 @@
 }
 
 .photos-container {
+    position:relative;
     padding-top: 50px;
     height: auto;
     max-width: 100%;
@@ -68,11 +69,17 @@
     overflow: hidden;
 }
 
-.photos-container img {
+.photos {
     position: relative;
     min-width: 900px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.signature {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;;
 }
 
 .mission-description-container {

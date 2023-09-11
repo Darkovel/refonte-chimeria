@@ -13,6 +13,10 @@
 
     /* Font/text values */
     --passheure-font-family-blackchancery: passheure-title-font;
+    --passheure-font-family-gothic: passheure-gothic-regular;
+    --passheure-font-family-daypbl: passheure-daypbl;
+    
+    --passheure-font-family-mistrully: passheure-mistrully;
     --passheure-font-family-perpetua: Perpetua;
     --passheure-font-style-normal: normal;
     --passheure-font-weight-normal: normal;
@@ -47,7 +51,22 @@
 @font-face {
     font-family: passheure-title-font;
     src: url(assets/fonts/BLKCHCRY.ttf) format("truetype");
-  }
+}
+
+@font-face {
+    font-family: passheure-daypbl;
+    src: url(assets/fonts/DAYPBL__.TTF) format("truetype");
+}
+
+@font-face {
+    font-family: passheure-mistrully;
+    src: url(assets/fonts/Mistrully.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: passheure-gothic-regular;
+    src: url(assets/fonts/LeagueGothic-Regular.ttf) format("truetype");
+}
 
 body {
     font-family:'passheure-title-font';

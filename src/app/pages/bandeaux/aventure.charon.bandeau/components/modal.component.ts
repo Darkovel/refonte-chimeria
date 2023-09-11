@@ -14,8 +14,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
         {
             display: none;
             position: fixed;
-            z-index: 1;
-            padding-top: 100px;
+            z-index: 98;
             left: 0;
             top: 0;
             width: 100%; 
@@ -25,8 +24,11 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
         }
 
         .content {
+            z-index: 99;
             background-color: #fefefe;
             margin: auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
             padding: 20px;
             border: 1px solid #888;
             width: 80%;

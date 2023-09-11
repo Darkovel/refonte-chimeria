@@ -15,6 +15,7 @@ import { AllCommuniquesBandeauComponent } from './all.communiques.bandeau/all.co
 import { AventureCharonBandeauComponent } from './aventure.charon.bandeau/aventure.charon.bandeau.component';
 import { CalendarBandeauComponent } from './calendar.bandeau/calendar.bandeau.component';
 import { ModalComponent } from './aventure.charon.bandeau/components/modal.component';
+import { LettreMissionComponent } from './aventure.charon.bandeau/components/lettre.mission.component';
 
 const index = [
     TitleBandeauComponent,
@@ -31,6 +32,7 @@ const index = [
     AllCommuniquesBandeauComponent,
     AventureCharonBandeauComponent,
     ModalComponent,
+    LettreMissionComponent,
 ]
 
 @NgModule({
