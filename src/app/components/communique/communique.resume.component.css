@@ -5,8 +5,10 @@
     padding: 25px;
     aspect-ratio: 1 / 1.6;
     width: fit-content;
+    max-width: 400px;
     height: auto;
     text-align: center;
+    margin: auto;
 }
 
 .communique-resume-img-container {

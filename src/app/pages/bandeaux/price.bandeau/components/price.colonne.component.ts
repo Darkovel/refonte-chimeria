@@ -5,17 +5,34 @@ import { Component, Input, AfterViewInit } from "@angular/core";
     template: `
         <div class="group">
             <div class="g-case g-img">
-                <img src={{listIconGroup[price.nbTeam-2]}} loading="lazy" alt="Icon de groupe" height="50%" width="auto">
+                <img src={{iconGroup.src}} loading="lazy" alt={{iconGroup.alt}} height="50%" width="auto">
             </div>
-            <div class="g-case g-h">
-                <p>{{price.priceHC}} €</p>
+            <div class="g-case g-h hproduct" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" typeof="product:Product">
+                <span class="" style="display: none;">
+                    <span class="category">Escape Game</span>
+                    <span class="category">Heure Creuse</span>
+                    <span class="category">{{price.nbTeam}} joueurs</span>
+                    <span class="fn">Session escape game en <abbr title="Heure Creuse">HC</abbr> </span>
+                    <span class="description">Une session d'escape game du Pass'heure en heure creuse pour {{price.nbTeam}} joueurs</span>
+                </span>
+                <p><span class="price">{{price.priceHC}}</span> <abbr title="Euros" lang="fr" class="currency">€</abbr></p>
             </div>
-            <div class="g-case g-h">
-                <p>{{price.priceHP}} €</p>
+            <div class="g-case g-h hproduct" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" typeof="product:Product">
+                <span class="" style="display: none;">
+                    <span class="category">Escape Game</span>
+                    <span class="category">Heure Pleine</span>
+                    <span class="category">{{price.nbTeam}} joueurs</span>
+                    <span class="fn">Session escape game en <abbr title="Heure Pleine">HP</abbr> </span>
+                    <span class="description">Une session d'escape game du Pass'heure en heure pleine pour {{price.nbTeam}} joueurs</span>
+                </span>
+                <p><span class="price">{{price.priceHP}}</span> <abbr title="Euros" lang="fr" class="currency">€</abbr></p>
             </div>
         </div>
     `,
     styles: [`
+        abbr {
+            text-decoration: none;
+        }
         .group {
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
@@ -85,6 +102,6 @@ import { Component, Input, AfterViewInit } from "@angular/core";
 
     ngAfterViewInit(): void {
         this.iconGroup.src = "/assets/img/prices/Groupe-" + this.price.nbTeam.toString() + "j.svg";
-        this.iconGroup.src = "Groupe de " + this.price.nbTeam.toString() + " joueurs";
+        this.iconGroup.alt = "Groupe de " + this.price.nbTeam.toString() + " joueurs";
     }
 }
